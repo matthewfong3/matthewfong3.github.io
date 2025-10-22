@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.png"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.png"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a id="aboutMeAnchor" href="index.html#aboutMe" class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="projectsAnchor"
+                        href="index.html#projects"
+                        class="selected navLinks"
+                        >Projects</a
+                    >
+                </li>
+                <li>
+                    <a id="contactsAnchor" href="index.html#contacts" class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.png"
+                        alt="LinkedIn link"
+                /></a>
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.png"
+                        alt="Github link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="projectContent">
+            <div class="reactComponent">
+                <div id="slider-container">
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/kingOfTheBall1.png"
+                            alt="King of the Ball 1"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/kingOfTheBall2.png"
+                            alt="King of the Ball 2"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/kingOfTheBall3.png"
+                            alt="King of the Ball 3"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/kingOfTheBall4.png"
+                            alt="King of the Ball 4"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/kingOfTheBall5.png"
+                            alt="King of the Ball 5"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/kingOfTheBall6.png"
+                            alt="King of the Ball 6"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/kingOfTheBall7.png"
+                            alt="King of the Ball 7"
+                        />
+                    </div>
+    
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+    
+                <div id="dotsDiv">
+                    <span class="dots" data-i="0"></span>
+                    <span class="dots" data-i="1"></span>
+                    <span class="dots" data-i="2"></span>
+                    <span class="dots" data-i="3"></span>
+                    <span class="dots" data-i="4"></span>
+                    <span class="dots" data-i="5"></span>
+                    <span class="dots" data-i="6"></span>
+                </div>
+    
+                <h3>King of the Ball</h3>
+    
+                <div class="description">
+                    <section class="left">
+                        <h4>Overview</h4>
+                        <p>
+                            Heavily inspired by PlayStation's <i>BaraBariBall</i>,
+                            King of the Ball is a local 1-versus-1 arcade-party
+                            game. This project features 3 custom levels,
+                            implementation of game physics (constant gravity force),
+                            basic player movement & jumping, and player interactions
+                            (players can pick up the ball from the ground or steal
+                            the ball from the other player holding it). The game
+                            mode is based on Microsoft Halo's OddBall game mode, in
+                            which players try to hold onto the ball for as long as
+                            they can while being in their respective color regions
+                            to gain points. The player with the most points after
+                            the timer expires wins. <br />
+                            <br />
+                            This project demonstrates understanding and utilization
+                            of HTML5's canvas element by updating game logic and
+                            animations and then displaying these updates on the
+                            canvas for players.
+                        </p>
+                        <h4>Tools used</h4>
+                        <p class="p">HTML5, CSS3, JavaScript, Canvas</p>
+                        <h4>Role</h4>
+                        <p class="p">Programmer & Designer</p>
+                        <p>
+                            - Programmed game physics, core mechanics, and
+                            functionality of the game using Object-Oriented
+                            Programming, such as
+                            <ul>
+                                <li>simple physics system (collision detection)</li>
+                            </ul>
+                        </p>
+                        
+                    </section>
+    
+                    <section class="right">
+                        <h4>Role (Cont.)</h4>
+                        <p>
+                            <ul>
+                                <li>bounding boxes</li>
+                                <li>player movement and interactions</li>
+                                <li>player and ball respawn logic</li>
+                            </ul>
+                            - Sprite Animations <br />
+                            - Sound Design (sound effects, background music)
+                            <br />
+                            - Designed style/look and feel of the game <br />
+                            - Designed level layouts <br />- Designed game menus
+                        </p>
+                        <h4>Platform</h4>
+                        <p class="p">Desktop Browser</p>
+                        <h4>Duration</h4>
+                        <p class="p">Less than 6 weeks</p>
+                        <h4>Team size</h4>
+                        <p class="p">1</p>
+    
+                        <p>
+                            <b>
+                                <span>Play the Game! </span>
+                                <a href="https://matthewfong3.github.io/king-of-the-ball/">
+                                    King of the Ball
+                                </a>
+                            </b>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

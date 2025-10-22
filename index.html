@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/css/index.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileIndex.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.png"
+                    alt="dropdown icon"
+                />
+                <a id="logoAnchor" href="#aboutMe" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.png"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="#aboutMe"
+                        class="selected navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a id="projectsAnchor" href="#projects" class="navLinks"
+                        >Projects</a
+                    >
+                </li>
+                <li>
+                    <a id="contactsAnchor" href="#contacts" class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.png"
+                        alt="LinkedIn link"
+                /></a>
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.png"
+                        alt="Github link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="content">
+            <section id="aboutMe">
+                <section id="leftAboutMe" class="leftAboutMe">
+                    <h3>
+                        Matthew Fong <br />
+                        Game Designer & Developer
+                    </h3>
+                </section>
+
+                <section id="rightAboutMe" class="rightAboutMe">
+                    <p>
+                        I graduated Rochester Institute of Technology (RIT), NY,
+                        with a
+                        <i
+                            >Bachelor of Science (BS) degree in game design and
+                            development</i
+                        >. I am currently pursuing my
+                        <i
+                            >Master's of Science (MS) degree in game design and
+                            development</i
+                        >
+                        also at RIT, expected May 2027. Rather than game design
+                        and development, as my program covers a wide range of
+                        concepts, a better way of describing my skills and
+                        practices would be
+                        <i
+                            >designing and programming rich interactive
+                            experiences.</i
+                        >
+                        <br /><br />
+
+                        My main area of focus is gameplay programming, however,
+                        3D art and modeling is always a field that intrigues me.
+                        As a developer, I am eager to continue growing, learning
+                        new concepts and challenging myself in both aspects of
+                        game design and game development.<br /><br />
+
+                        I have programmed in software languages such as
+                        <i><b>C++, JavaScript, C#</b></i
+                        >; and am familiar with tools such as
+                        <i
+                            ><b
+                                >HTML5, CSS3, Sass, ES6, NodeJS, ReactJS,
+                                ExpressJS, REST, MVC framework, JQuery,
+                                Object-Oriented Programming, Websockets
+                                (socket.io), and Canvas.</b
+                            ></i
+                        ><br />
+                        I also have worked with various software programs,
+                        including
+                        <i
+                            ><b
+                                >Unreal Engine 5, Blender, Visual Studio, VS
+                                Code, Unity and Autodesk Maya.</b
+                            ></i
+                        >
+                    </p>
+                </section>
+            </section>
+
+            <section id="projects">
+                <div class="projects">
+                    <a class="fake-links" href="deserted.html">
+                        <img
+                            src="hosted/images/deserted_gray.png"
+                            alt="Deserted Game"
+                            data-file="deserted"
+                        />
+                        <p>Deserted Game</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="adventuretime.html">
+                        <img
+                            src="hosted/images/adventuretime_gray.png"
+                            alt="Adventure Time Game"
+                            data-file="adventuretime"
+                        />
+                        <p>Adventure Time</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="arcadejam.html">
+                        <img
+                            src="hosted/images/arcadeJam_gray.png"
+                            alt="Arcade-Jam"
+                            data-file="arcadeJam"
+                        />
+                        <p>Arcade-Jam</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="kingoftheball.html">
+                        <img
+                            src="hosted/images/kingOfTheBall_gray.png"
+                            alt="King of the Ball"
+                            data-file="kingOfTheBall"
+                        />
+                        <p>King of the Ball</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="drawwithfriends.html">
+                        <img
+                            src="hosted/images/pictionary_gray.png"
+                            alt="Draw With Friends!"
+                            data-file="pictionary"
+                        />
+                        <p>Draw With Friends!</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="dynamicdash.html">
+                        <img
+                            src="hosted/images/dynamicDash_gray.png"
+                            alt="Dynamic Dash Game"
+                            data-file="dynamicDash"
+                        />
+                        <p>Dynamic Dash Game</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="cookie.html">
+                        <img
+                            src="hosted/images/cookie_gray.png"
+                            alt="Cookie"
+                            data-file="cookie"
+                        />
+                        <p>Cookie</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="devilfruit.html">
+                        <img
+                            src="hosted/images/devilfruit_gray.png"
+                            alt='"One Piece" Devil Fruit'
+                            data-file="devilfruit"
+                        />
+                        <p>"One Piece" Devil Fruit</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="chessenvironment.html">
+                        <img
+                            src="hosted/images/chess_environment_gray.png"
+                            alt="Chess Environment"
+                            data-file="chess_environment"
+                        />
+                        <p>Chess Environment</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="3Dmodels.html">
+                        <img
+                            src="hosted/images/rabbit_gray.png"
+                            alt="3D Models"
+                            data-file="rabbit"
+                        />
+                        <p>3D Models</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="tweeter.html">
+                        <img
+                            src="hosted/images/tweeter_gray.png"
+                            alt="Tweeter"
+                            data-file="tweeter"
+                        />
+                        <p>Tweeter (Twitter Clone)</p>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a class="fake-links" href="audioviz.html">
+                        <img
+                            src="hosted/images/audioviz_gray.png"
+                            alt="Audio Visualizer"
+                            data-file="audioviz"
+                        />
+                        <p>Audio Visualizer</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="contacts">
+                <section id="leftContacts" class="leftContacts">
+                    <h3>Contacts</h3>
+                    <p>
+                        Phone: 347-551-0888 <br />
+                        Email: matthewfong3 [AT] gmail [DOT] com
+                    </p>
+                </section>
+
+                <section id="rightContacts" class="rightContacts">
+                    <h3>Stalk Me</h3>
+                    <div id="links">
+                        <a href="https://github.com/matthewfong3"
+                            ><img
+                                id="Github"
+                                src="hosted/images/github.png"
+                                alt="Github link"
+                        /></a>
+                        <a href="https://www.linkedin.com/in/matthewfong3/"
+                            ><img
+                                id="LinkedIn"
+                                src="hosted/images/linkedin.png"
+                                alt="LinkedIn Link"
+                        /></a>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/appBundle.js"></script>
+    </body>
+</html>

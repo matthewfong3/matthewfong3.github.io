@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.png"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.png"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a id="aboutMeAnchor" href="index.html#aboutMe" class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="projectsAnchor"
+                        href="index.html#projects"
+                        class="selected navLinks"
+                        >Projects</a
+                    >
+                </li>
+                <li>
+                    <a id="contactsAnchor" href="index.html#contacts" class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.png"
+                        alt="LinkedIn link"
+                /></a>
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.png"
+                        alt="Github link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="projectContent">
+            <div class="reactComponent">
+                <div id="slider-container">
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/pictionary1.png"
+                            alt="pictionary 1"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img 
+                            src="hosted/images/pictionary2.png"
+                            alt="pictionary 2"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/pictionary3.png"
+                            alt="pictionary 3"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/pictionary4.png"
+                            alt="pictionary 4"
+                        />
+                    </div>
+    
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+    
+                <div id="dotsDiv">
+                    <span class="dots" data-i="0"></span>
+                    <span class="dots" data-i="1"></span>
+                    <span class="dots" data-i="2"></span>
+                    <span class="dots" data-i="3"></span>
+                </div>
+    
+                <h3>Draw With Friends!</h3>
+    
+                <div class="description">
+                    <section class="left">
+                        <h4>Overview</h4>
+                        <p>
+                            Draw With Friends! is a clone copy of the popular game
+                            <i>Pictionary</i>. Each round, a different player is
+                            given a random word to draw and the other 3 players must
+                            guess the word to gain a point. The first player to
+                            reach 3 points will be declared the winner of the game
+                            and a new game will begin. <br />
+                            <br />
+                            By utilizing Websockets (socket.io), Canvas and NodeJs,
+                            Draw With Friends! is a project that connects users
+                            (players) from different client browsers into a game
+                            session (server room). Multiple rooms are also
+                            supported, as the first four players to join will be put
+                            in one game (server) room and the following four will be
+                            put in another game (server) room. Within a game, as the
+                            drawer is painting his artwork onto their canvas, all
+                            the image data is being emitted to the server, in which
+                            the server will then broadcast the data back to the
+                            other 3 guessers onto their respective canvases.
+                            Similarly, all the messages in the chatbox that the 3
+                            guessers send will be emitted to the server, which will
+                            be checked against the drawer's word and then
+                            broadcasted back to every player in the room.
+                        </p>
+                        <h4>Tools used</h4>
+                        <p class="p">
+                            HTML5, CSS3, JavaScript, NodeJs, Canvas, Websockets
+                            (socket.io)
+                        </p>
+                        <h4>Role</h4>
+                        <p class="p">Programmer & Designer</p>
+                        <p>
+                            - Programmed core functionality of the game, such as
+                            <ul>
+                                <li>
+                                    connecting different client browsers in a game
+                                    session (4 player server rooms) using websockets
+                                    (socket.io)
+                                </li>
+                                
+                                
+                            </ul>
+                            
+                        </p>
+                        
+                    </section>
+    
+                    <section class="right">
+                        <h4>Role (Cont.)</h4>
+                        <p>
+                            <ul>
+                                <li>
+                                    the server assigns one random drawer at the
+                                    start of each game, while the other three
+                                    players will guess the word
+                                </li>
+                                <li>
+                                    communication logic between clients and server
+                                    when sending and receiving data, i.e - chatbox
+                                    messages, updates to the canvas when drawing
+                                </li>
+                                <li>
+                                    emitting and broadcasting image data (canvas
+                                    drawings) between server and all connected
+                                    clients
+                                </li>
+                            </ul>
+                            - Designed layout and style/look and feel of the game
+                        </p>
+                        <h4>Platform</h4>
+                        <p class="p">Desktop Browser</p>
+                        <h4>Duration</h4>
+                        <p class="p">Less than 6 weeks</p>
+                        <h4>Team size</h4>
+                        <p class="p">1</p>
+    
+                        <p>
+                            <b>
+                                <span>Play the Game! </span>
+                                <a href="https://pictionary-n42s.onrender.com/">
+                                    Draw With Friends!
+                                </a>
+                            </b>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

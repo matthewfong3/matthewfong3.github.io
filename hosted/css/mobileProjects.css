@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+  .reactComponent .description {
+    display: block;
+  }
+  .reactComponent .description .left h4,
+  .reactComponent .description .right h4,
+  .reactComponent .description .left .p,
+  .reactComponent .description .right .p {
+    text-align: center;
+  }
+  .reactComponent .description .left,
+  .reactComponent .description .right {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .reactComponent .description .right {
+    margin-top: 0;
+  }
+  .reactComponent #dotsDiv {
+    width: 100%;
+    text-align: center;
+  }
+  .reactComponent #dotsDiv .dots {
+    width: 5px;
+    height: 5px;
+  }
+  .reactComponent #dotsDiv .dots:hover {
+    width: 10px;
+    height: 10px;
+  }
+  .reactComponent #dotsDiv .selected {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/*# sourceMappingURL=mobileProjects.css.map */

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.png"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.png"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="projectsAnchor"
+                        href="index.html#projects"
+                        class="selected navLinks"
+                        >Projects</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.png"
+                        alt="LinkedIn link"
+                /></a>
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.png"
+                        alt="Github link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="projectContent">
+            <div class="reactComponent">
+                <div id="slider-container">
+                    <div class="slides fade">
+                        <video controls>
+                            <source
+                                src="hosted/images/devilfruit1.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <div class="slides fade">
+                        <video controls>
+                            <source
+                                src="hosted/images/devilfruit2.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+
+                <div id="dotsDiv">
+                    <span class="dots" data-i="0"></span>
+                    <span class="dots" data-i="1"></span>
+                </div>
+
+                <h3>"One Piece" Devil Fruit</h3>
+
+                <div class="description">
+                    <section class="left">
+                        <h4>Overview</h4>
+                        <p>
+                            Inspired by <i>One Piece</i>'s gomu gomu devil
+                            fruit, I created two variations of the devil fruit.
+                            Using primitives and bezier curves, I first modeled
+                            the shape of devil fruit. After some simple
+                            texturing and shading, I found myself investing most
+                            of my time into lighting and compositing (post
+                            processing) to really make my devil fruit pop and
+                            shine. Finally, with some simple animations, I
+                            rendered out a short video showcasing my
+                            irresistible devil fruits. <br />
+                            <br />
+                            P.S. - I never finished watching
+                            <i>One Piece</i> and probably never will because it
+                            is too long -
+                            <i>Ain't nobody got time for that!</i> :)
+                        </p>
+                        <h4>Tools Used</h4>
+                        <p class="p">Blender</p>
+                    </section>
+
+                    <section class="right">
+                        <h4>Role</h4>
+                        <p class="p">
+                            - 3D modelling <br />
+                            - Texturing and Shading <br />
+                            - Compositing (Post processing) <br />
+                            - Lighting <br />
+                            - Animation <br />- Rendering
+                        </p>
+                        <h4>Duration</h4>
+                        <p class="p">Less than 2 weeks</p>
+                        <h4>Team size</h4>
+                        <p class="p">1</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

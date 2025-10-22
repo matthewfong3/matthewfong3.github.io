@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.png"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.png"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a id="aboutMeAnchor" href="index.html#aboutMe" class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="projectsAnchor"
+                        href="index.html#projects"
+                        class="selected navLinks"
+                        >Projects</a
+                    >
+                </li>
+                <li>
+                    <a id="contactsAnchor" href="index.html#contacts" class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.png"
+                        alt="LinkedIn link"
+                /></a>
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.png"
+                        alt="Github link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="projectContent">
+            <div class="reactComponent">
+                <div id="slider-container">
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/arcadeJam1.png"
+                            alt="arcadeJam 1"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            id="img"
+                            src="hosted/images/arcadeJam2.png"
+                            alt="arcadeJam 2"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            id="img"
+                            src="hosted/images/arcadeJam3.png"
+                            alt="arcadeJam 3"
+                        />
+                    </div>
+    
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+    
+                <div id="dotsDiv">
+                    <span class="dots" data-i="0"></span>
+                    <span class="dots" data-i="1"></span>
+                    <span class="dots" data-i="2"></span>
+                </div>
+    
+                <h3>Arcade-Jam</h3>
+    
+                <div class="description">
+                    <section class="left">
+                        <h4>Overview</h4>
+                        <p>
+                            Inspired by air-hockey, Arcade-Jam is a four player,
+                            team-based, sports-like shooting game. With two players
+                            on the red team and two players on the blue team,
+                            players must shoot projectiles past the opposing team's
+                            side to get a point However, players may block incoming
+                            projectiles from reaching the "goal" (sides of screen).
+                            The first team to get 3 points is declared the winning
+                            team. Arcade-Jam offers very fast-paced and chaotic
+                            gameplay. <br />
+                            <br />
+                            By using websockets (socket.io), Arcade-Jam is able to
+                            connect users (players) from different browsers together
+                            in game sessions (server rooms). There can be multiple
+                            game rooms at once, so 4 players connected are placed in
+                            one room and the next 4 are placed in another room, and
+                            so on.
+                        </p>
+                        <h4>Tools used</h4>
+                        <p class="p">
+                            HTML5, CSS3, JavaScript, NodeJs, Canvas, Websockets
+                            (socket.io)
+                        </p>
+                        
+                        <h4>Role</h4>
+                        <p class="p">Programmer & Designer</p>
+                        <p>
+                            - Programmed core mechanics and functionality of the
+                            game using Object-Oriented Programming, such as
+                            <ul>
+                                <li>
+                                    data communication between client and server
+                                    (emitting and broadcasting data back and forth
+                                    between server and all connected clients)
+                                </li>
+                                
+                            </ul>
+                        </p>    
+                    </section>
+    
+                    <section class="right">
+                        <h4>Role (Cont.)</h4>
+                        <p>
+                            <ul>
+                                <li>
+                                    creating server rooms and connecting players in
+                                    a game session with websockets (socket.io)
+                                </li>
+                                <li>player movement</li>
+                                <li>bullet firing</li>
+                                <li>bullet shielding</li>
+                                <li>simple physics system (collision detection)</li>
+                            </ul>
+                            - Designed style/look and feel of the game <br />
+                            - Designed UI elements and game menus
+                        </p>
+                        <h4>Platform</h4>
+                        <p class="p">Desktop Browser</p>
+                        <h4>Duration</h4>
+                        <p class="p">Less than 6 weeks</p>
+                        <h4>Team size</h4>
+                        <p class="p">1</p>
+                        
+                        <p>
+                            <b>
+                                <span>Play the Game! </span>
+                                <a href="https://arcade-jam2.onrender.com/">
+                                    Arcade-Jam
+                                </a>
+                            </b>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

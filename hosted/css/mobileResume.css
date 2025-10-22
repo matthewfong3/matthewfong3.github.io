@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  #resumeContent h1 {
+    text-align: center;
+  }
+  #resumeContent .contactRight {
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=mobileResume.css.map */

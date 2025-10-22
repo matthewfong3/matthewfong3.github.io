@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.png"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.png"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a id="aboutMeAnchor" href="index.html#aboutMe" class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="projectsAnchor"
+                        href="index.html#projects"
+                        class="selected navLinks"
+                        >Projects</a
+                    >
+                </li>
+                <li>
+                    <a id="contactsAnchor" href="index.html#contacts" class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="/resume" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.png"
+                        alt="LinkedIn link"
+                /></a>
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.png"
+                        alt="Github link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="projectContent">
+            <div class="reactComponent">
+                <div id="slider-container">
+                    <div class="slides fade">
+                        <img src="hosted/images/tweeter1.png" alt="tweeter 1" />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            id="img"
+                            src="hosted/images/tweeter2.png"
+                            alt="tweeter 2"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            id="img"
+                            src="hosted/images/tweeter3.png"
+                            alt="tweeter 3"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img src="hosted/images/tweeter4.png" alt="tweeter 4" />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            id="img"
+                            src="hosted/images/tweeter5.png"
+                            alt="tweeter 5"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            id="img"
+                            src="hosted/images/tweeter6.png"
+                            alt="tweeter 6"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            id="img"
+                            src="hosted/images/tweeter7.png"
+                            alt="tweeter 7"
+                            width="100%"
+                            height="100%"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            id="img"
+                            src="hosted/images/tweeter8.png"
+                            alt="tweeter 8"
+                            width="100%"
+                            height="100%"
+                        />
+                    </div>
+    
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+    
+                <div id="dotsDiv">
+                    <span class="dots" data-i="0"></span>
+                    <span class="dots" data-i="1"></span>
+                    <span class="dots" data-i="2"></span>
+                    <span class="dots" data-i="3"></span>
+                    <span class="dots" data-i="4"></span>
+                    <span class="dots" data-i="5"></span>
+                    <span class="dots" data-i="6"></span>
+                    <span class="dots" data-i="7"></span>
+                </div>
+    
+                <h3>Tweeter</h3>
+    
+                <div class="description">
+                    <section class="left">
+                        <h4>Overview</h4>
+                        <p>
+                            Tweeter is a social media <i>Twitter</i>-clone app
+                            project, demonstrating understanding of RESTful API and
+                            implementation of a Model-View-Controller (MVC)
+                            framework. Although, it is still missing various
+                            features, Tweeter was developed and designed to
+                            exemplify the core concept of what Twitter is, an
+                            application where users can view a collection of data
+                            created by other users and interact with each other
+                            through this collection of data, which is stored in a
+                            database. <br />
+                            <br />
+                            Some features of Tweeter include creation of user
+                            accounts, following accounts, tweeting (posting)
+                            messages, while also the ability to attach images,
+                            video, and gif files to tweets. Users can view not only
+                            their own tweets, but also tweets from other Tweeter
+                            accounts they follow. Additionally, users may also edit
+                            and/or delete their own tweets and can reply to other
+                            tweets. Account users can change their password and may
+                            toggle between a light/dark mode interface as well.
+                        </p>
+                        <h4>Tools used</h4>
+                        <p class="p">
+                            HTML5, CSS3, JavaScript, Jquery, (MERN) NodeJs, ReactJS,
+                            ExpressJS, MongoDB, Redis
+                        </p>
+                        <h4>Role</h4>
+                        <p class="p">
+                            Programmer & Designer (Full Stack Developer)
+                        </p>
+                        <p>
+                            - Programmed and implemented core functionality of the
+                            app, such as
+                            <ul>
+                                <li>secure sign-up/log-in with accounts</li>
+                                <li>encrypting passwords for user accounts</li>
+                                
+                            </ul>
+                        </p>
+                    </section>
+    
+                    <section class="right">
+                        <h4>Role (Cont.)</h4>
+                        <p>
+                            <ul>
+                                <li>account's following/followers system</li>
+                                <li>
+                                    creating, editing, deleting, favoriting,
+                                    replying to user's tweets
+                                </li>
+                                <li>
+                                    attaching images, gifs, and video files to
+                                    tweets
+                                </li>
+                            </ul>
+                            - Implemented dynamic and responsive application with
+                            ReactJS <br />
+                            - Developed a light/dark mode feature <br />- Designed
+                            style/look and feel of the app
+                        </p>
+                        <h4>Platform</h4>
+                        <p class="p">Desktop Browser</p>
+                        <h4>Duration</h4>
+                        <p class="p">Less than 4 months</p>
+                        <h4>Team size</h4>
+                        <p class="p">1</p>
+                        
+    
+                        <p>
+                            <b>
+                                <span>Experience it Yourself! </span>
+                                <a href="https://tweeter-3de7.onrender.com/">
+                                    Tweeter
+                                </a>
+                            </b>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

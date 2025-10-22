@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.png"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.png"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="projectsAnchor"
+                        href="index.html#projects"
+                        class="selected navLinks"
+                        >Projects</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.png"
+                        alt="LinkedIn link"
+                /></a>
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.png"
+                        alt="Github link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="projectContent">
+            <div class="reactComponent">
+                <div id="slider-container">
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/deserted1.png"
+                            alt="Deserted 1"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/deserted2.png"
+                            alt="Deserted 2"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/deserted3.png"
+                            alt="Deserted 3"
+                        />
+                    </div>
+                    <div class="slides fade">
+                        <img
+                            src="hosted/images/deserted4.png"
+                            alt="Deserted 4"
+                        />
+                    </div>
+
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+
+                <div id="dotsDiv">
+                    <span class="dots" data-i="0"></span>
+                    <span class="dots" data-i="1"></span>
+                    <span class="dots" data-i="2"></span>
+                    <span class="dots" data-i="3"></span>
+                </div>
+
+                <h3>Deserted</h3>
+
+                <div class="description">
+                    <section class="left">
+                        <h4>Overview</h4>
+                        <p>
+                            Deserted is a first person survival shooter game. It
+                            consists of two levels, one is a shooting range
+                            which introduces the player to the basic mechanics
+                            of the game, such as movement, sprinting, crouching,
+                            shooting, reloading, etc. The second level is a
+                            zombie survival level, where the player has more
+                            freedom to move around the map while fighting off
+                            hordes of zombies. The player will gain points as
+                            they fight for survival and can spend those points
+                            to purcahse other weapons and/or replenish ammo.
+                        </p>
+                        <h4>Tools used</h4>
+                        <p class="p">
+                            Unreal Engine 5, Blueprints, Animation Blueprints,
+                            Blender
+                        </p>
+                        <h4>Role</h4>
+                        <p class="p">
+                            - Programmed player controls with the Enhanced Input
+                            Subsystem, such as movement, sprinting, jumping,
+                            crouching, shooting, aim down sight (ADS),
+                            reloading, switching weapons, picking up weapons,
+                            dropping weapons<br />
+                            - Implemented smooth transition logic between
+                            different player control states <br />
+                            - Developed a weapon struct system using
+                            Object-Oriented Programming, allowing for various
+                            different types of weapons <br />
+                            - Implemented different gun fire modes (automatic
+                            fire, semi-automatic fire, and burst fire) allowing
+                            the player to switch between different fire modes on
+                            various weapons, offering more variety in gameplay
+                            <br />
+                            - Programmed a target dummy actor that is used in
+                            the shooting range level and logic between hit
+                            detection and resetting the target dummy
+                            <br />
+                            - Programmed the logic behind a time trial feature
+                            in the shooting range level through blueprint
+                            gamemode <br />
+                        </p>
+                    </section>
+
+                    <section class="right">
+                        <h4>Role (Cont.)</h4>
+                        <p>
+                            - Implemented a weapon buy system similiar to that
+                            of Call of Duty Zombies mode, where the player gains
+                            points while fighting the zombie horde and can spend
+                            those points to purchase various weapons off the
+                            wall or replenish ammo <br />
+                            - Programmed the logic for transitioning between
+                            zombie waves through blueprint gamemode <br />
+                            - Implemented different zombie types using
+                            inheritance, allowing for different zombie attacks
+                            and stats
+                            <br />
+                            - Programmed enemy AI behavior logic, such as simple
+                            autonomous behavior (seeking when the player is in
+                            range or free roaming) <br />
+                            - Developed player health system, syncing update
+                            logic with widget blueprints to display visuals and
+                            current health or game over (death) screen <br />
+                            - Implemented toggleable game settings, such as
+                            mouse sensitivity, hold to crouch, hold to sprint
+                            features, that the player can adjust to better fit
+                            their gameplay preferences<br />
+                            - Programmed the game states and transition logic
+                            between the different game states and levels<br />
+                            - Designed the level layout of the shooting range
+                            and zombie levels
+                        </p>
+                        <h4>Platform</h4>
+                        <p class="p">Windows</p>
+                        <h4>Duration</h4>
+                        <p class="p">Less than 8 weeks</p>
+                        <h4>Team size</h4>
+                        <p class="p">1</p>
+                        <p>
+                            <b>
+                                <span>Play the Game! </span>
+                                <a href="https://unshaide.itch.io/deserted">
+                                    Deserted
+                                </a>
+                            </b>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

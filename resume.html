@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/css/resume.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileResume.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.png"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.png"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="projectsAnchor"
+                        href="index.html#projects"
+                        class="navLinks"
+                        >Projects</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="hosted/files/matthewfong_resume.pdf"
+                        download="hosted/files/matthewfong_resume.pdf"
+                        class="selected"
+                        >Resume</a
+                    >
+                </li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.png"
+                        alt="LinkedIn link"
+                /></a>
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.png"
+                        alt="Github link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="resumeContent">
+            <p>
+                *To download a PDF copy, please click on the Resume link in the
+                navigation bar*
+            </p>
+            <h1>Matthew Fong</h1>
+
+            <div class="contactRight">
+                <h4>Email: matthewfong3 [AT] gmail [DOT] com</h4>
+                <h4>Phone: (347) 551-0888</h4>
+            </div>
+
+            <h4>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/matthewfong3"
+                    >https://www.linkedin.com/in/matthewfong3</a
+                >
+            </h4>
+            <h4>
+                Github:
+                <a href="https://github.com/matthewfong3"
+                    >https://github.com/matthewfong3</a
+                >
+            </h4>
+            <hr />
+
+            <h3>Projects:</h3>
+            <ul>
+                <li>Deserted Game <i>(Unreal Engine 5)</i></li>
+                <span>
+                    - Implemented Enhanced Player Input Subsystem for player
+                    controls, such as movement, crouching, jumping, shooting,
+                    reloading, aim down sight (ADS) and smooth transition logic
+                    between player states <br />
+                    - Developed weapon struct system allowing implementation of
+                    various different types of weapons <br />
+                    - Implemented different weapon gun fire modes (automatic
+                    fire, semi-automatic fire, burst fire) on different weapons,
+                    allowing the player to switch a weapon’s fire mode <br />
+                    - Scripted a time trial minigame feature in the shooting
+                    range level <br />
+                    - Implemented a weapon buy system similar to Call of Duty
+                    Zombies mode, where the player can spend points to purchase
+                    weapons around the map or replenish ammo
+                </span>
+                <li>Adventure Time Game <i>(Unreal Engine 5)</i></li>
+                <span>
+                    - Programmed player controls such as movement, jumping,
+                    attacking <br />
+                    - Scripted various enemy AI logic using AI Controller, such
+                    as edge detection, enemy detection, simple autonomous
+                    behavior (seeking when the player is in range or free
+                    roaming) <br />
+                    - Designed and implemented the layout and flow of the level
+                </span>
+                <li>Arcade-Jam</li>
+                <span>
+                    - Developed a simple 2-versus-2 (air-hockey-like) team-based
+                    fast-paced arcade-shooter Canvas game, using NodeJS and
+                    ExpressJS framework, while demonstrating understanding of
+                    Websockets (socket.io) to connect unique client browsers to
+                    an interactive game session (server room) <br />
+                    - Programmed core mechanics/functionality of the game using
+                    Object-Oriented Programming in JavaScript, including basic
+                    player movement, firing bullets, bullet shielding,
+                    collision-detection, simple physics system and player
+                    scoring <br />
+                    - Handled the communication logic between client browsers
+                    and the server with regards to sending and receiving data
+                    across all clients and server, in order to simulate a near
+                    real-time game experience for players <br />
+                    - Designed the style/look and feel of the game using CSS3
+                </span>
+
+                <li>
+                    Dynamic Dash Game -
+                    <i>Inspired by Steam’s “Speedrunners” game</i>
+                </li>
+                <span>
+                    - Programmed some of the core game mechanics using
+                    Object-Oriented Programming, such as Power-Up abilities, in
+                    C# <br />
+                    - Wrote C# scripts to handle the interactions between
+                    different power-up abilities and how they affect the players
+                    <br />
+                    - Designed layout and obstacles of each level/race course in
+                    the Unity editor <br />
+                    - Designed GUI elements and UI menus of the game in Unity
+                </span>
+            </ul>
+            <hr />
+
+            <h3>Skills:</h3>
+            <h4>Programming Languages: C++, JavaScript, C#</h4>
+            <h4>
+                Tools: HTML5, CSS3, Sass, Flexbox, ES6, NodeJS, ExpressJS, REST,
+                MVC framework, ReactJS, JQuery, Object-Oriented Programming,
+                Websockets (socket.io), Canvas
+            </h4>
+            <h4>
+                Software: Unreal Engine 5, Blender, Visual Studio, VS Code,
+                Autodesk Maya, Unity
+            </h4>
+            <hr />
+
+            <div id="education">
+                <h3>Education:</h3>
+                <h4>Rochester Institute of Technology | Rochester, NY</h4>
+                <h5 class="eduinfo">
+                    Master of Science in Game Design and Development | Expected
+                    May 2027 <br />Bachelor of Science in Game Design and
+                    Development, Immersion in Music | May 2018
+                </h5>
+                <h5 class="eduinfo">Overall GPA: 4.00/4.00</h5>
+                <h5 class="eduinfo">
+                    Honors & Awards: Summa Cum Laude, Dean's List Fall 2014 -
+                    Spring 2018
+                </h5>
+
+                <h4>
+                    Bard High School Early College Queens, Bard College | New
+                    York, NY
+                </h4>
+                <h5 class="eduinfo">
+                    Associate of Arts in Liberal Arts | June 2014
+                </h5>
+            </div>
+            <hr />
+            <div id="workExperience">
+                <h3>Work Experience:</h3>
+                <h4>Warren Street Hotel | New York, NY</h4>
+                <h5>Guest Service Ambassador | June-September 2024</h5>
+                <span>
+                    - Collaborated with other department managers to ensure
+                    upcoming deadlines were met <br />
+                    - Clear and prompt communication between different
+                    departments within the company, regarding special guest
+                    needs, requests, inquiries <br />
+                    - Regularly following up with guests to gain feedback and
+                    ensure their stay and service provided was nothing less of
+                    perfection
+                </span>
+
+                <h4>The Langham Fifth Avenue, New York | New York, NY</h4>
+                <h5>Guest Service Ambassador | May 2022-April 2024</h5>
+                <span>
+                    - Collaborated with supervisors and team members in
+                    brainstorming new ideas to improve workflow efficiency
+                    <br />
+                    - Flexibility in assisting supervisor and team members with
+                    various tasks as necessary during peak business hours <br />
+                    - Listened to guest complaints, diffusing tense situations
+                    and implementing solutions to ensure maximum guest
+                    satisfaction
+                </span>
+
+                <h4>Almax Taxi Brokers LLC | New York, NY</h4>
+                <h5>Full Stack Web Developer | January 2021-May 2022</h5>
+                <span>
+                    - Translated wireframes and design layouts into a prototype
+                    NodeJS, ExpressJS (MERN) web services site <br />
+                    - Implemented password change feature for all user accounts
+                    <br />
+                    - Built and designed reactive web pages and dynamic forms
+                    using HTML5, CSS3 and ReactJS
+                </span>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/resumeBundle.js"></script>
+    </body>
+</html>

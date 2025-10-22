@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  font-family: "Abel", sans-serif;
+}
+
+#resumeContent {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+#resumeContent h1 {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#resumeContent p {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+#resumeContent .contactRight {
+  float: right;
+}
+#resumeContent li,
+#resumeContent span {
+  font-weight: bold;
+}
+#resumeContent .eduinfo,
+#resumeContent #workExperience h5 {
+  padding: 0;
+  margin: 0;
+}
+#resumeContent #education h4,
+#resumeContent #workExperience h4 {
+  margin-bottom: 2px;
+}
+
+/*# sourceMappingURL=resume.css.map */

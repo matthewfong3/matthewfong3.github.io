@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+  #content {
+    padding-top: 60px;
+  }
+  #content #aboutMe {
+    background-image: none;
+    display: block;
+  }
+  #content #aboutMe .leftAboutMe,
+  #content #aboutMe .rightAboutMe {
+    width: 100%;
+  }
+  #content #aboutMe .rightAboutMe p {
+    margin: 10%;
+  }
+  #content .projects {
+    float: none;
+    width: 100%;
+  }
+  #content #contacts {
+    background-image: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=mobileIndex.css.map */

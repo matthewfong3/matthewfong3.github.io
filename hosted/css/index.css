@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+#content #contacts, #content #aboutMe {
+  background-image: url("/assets/images/appContentWallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  font-family: "Abel", sans-serif;
+}
+
+#content {
+  margin-top: 60px;
+  padding-top: 30px;
+}
+#content #aboutMe {
+  clear: both;
+}
+#content #aboutMe .leftAboutMe,
+#content #aboutMe .rightAboutMe {
+  width: 40%;
+}
+#content #aboutMe .leftAboutMe {
+  text-align: center;
+}
+#content .projects {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
+}
+#content .projects img {
+  width: 200px;
+  height: 200px;
+}
+#content .projects .fake-links {
+  text-decoration: none;
+}
+#content .projects .fake-links:visited,
+#content .projects .fake-links:hover,
+#content .projects .fake-links:link,
+#content .projects .fake-links:active {
+  color: black;
+}
+#content #contacts {
+  text-align: center;
+  clear: both;
+}
+#content #contacts #LinkedIn,
+#content #contacts #Github {
+  width: 60px;
+  height: 60px;
+}
+
+/*# sourceMappingURL=index.css.map */
