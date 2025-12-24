@@ -39,13 +39,12 @@ body {
     padding: 0;
     margin: 0;
 }
+#resumeContent .eduinfo .relevant {
+    font-style: italic;
+}
 #resumeContent #education h4,
 #resumeContent #workExperience h4 {
     margin-bottom: 2px;
-}
-
-#resumeContent .eduinfo b {
-    font-weight: bold;
 }
 
 /*# sourceMappingURL=resume.css.map */
