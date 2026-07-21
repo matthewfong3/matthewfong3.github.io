@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.webp"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.webp"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="programmingAnchor"
+                        href="index.html#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="selected navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.webp"
+                        alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="selected navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="projectContent">
+            <section
+                id="cover"
+                class="odd"
+            >
+                <img src="hosted/images/vampempire1.webp"/>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    
+                    <img
+                        src="hosted/images/vampempire2.webp"
+                        alt="VampEmpire 2"
+                    />
+                </div>
+                <div class="right">
+                    <h1>Vampempire</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        Inspired by the popular board game <i>Root</i>,
+                        <i>Vampempire</i> is a fast-paced competitive board game
+                        that pits 4 Vampires against one another for control of
+                        the Vatican, located at the center of the board. I
+                        designed 2 of the 4 Vampires that players can choose to
+                        play. This includes designing the Vampire's abilities
+                        and iterating and balancing Vampire's powers during
+                        gameplay. My main focus was to design Vampires that
+                        cater to different playstyles, while also ensuring no
+                        one Vampire is overpowered and not viable. The Lumbering
+                        Beast is a snowball character where the player starts
+                        slow in the early game but quickly ramps up power as the
+                        game progresses. The Tyrant offers is an early game Zerg
+                        rush, starting the game with more power than other
+                        Vampires. However, The Tyrant's power will fall off as
+                        the game progresses as other Vampires grow stronger. I
+                        also assisted in designing the Ritual action cards and
+                        balancing the power and cohesiveness of each card.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">Canva, Google Docs, Google Spreadsheet</p>
+                    <h3>Duration</h3>
+                    <p class="p">Less than 6 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">4</p>
+                    <h3>Role: Designer</h3>
+                    <ul>
+                        <li>Designed the abilities for The Lumbering Beast</li>
+                        <li>
+                            Iterated on the design abilities for The Lumbering
+                            Beast for game balance
+                        </li>
+                        <li>Designed the abilities for The Tyrant</li>
+                        <li>
+                            Iterated on the design abilities for The Tyrant for
+                            game balance
+                        </li>
+                        <li>
+                            Assisted in designing the poster card for Vampempire
+                        </li>
+                        <li>Assisted in designing Ritual cards</li>
+                        <li>Designed the Soul cards</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/vampempire3.webp"
+                        alt="VampEmpire 3"
+                    />
+                    <img
+                        src="hosted/images/vampempire4.webp"
+                        alt="VampEmpire 4"
+                    />
+                </div>
+                <div class="right">
+                    <h1>Ideation</h1>
+                    <p>
+                        This is an example of the early stages of me working
+                        with my team to ideate the lore and theme of one of the
+                        game's playable characters. We wanted to create a
+                        character that exemplified a corrupt ruler abusing their
+                        power and oppressing their own kingdom. This ruler also
+                        has the ability to shapeshift, specifically into a bat.
+                    </p>
+                        After brainstorming on a deceptive tyranical bat figure, 
+                        I worked on ideating the character's ability.
+                        As one of the themes is oppression, I designed the character's 
+                        abilities so their effects feel oppressive to other players. 
+                        One example of this is designing the character
+                        to be an early game threat, which can be seen through her 
+                        Iron Fist (During setup, the closest village is under your control). 
+                        Additionally, the character is a tyrant that is constantly power hungry, conquering other lands
+                        and expanding their territory. This is shown through their other abilities, which involve 
+                        taking resources from other players, gaining an advantage in conquering territories and having one more turn action 
+                        than other players.
+                    </p>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/vampempire5.webp"
+                        alt="VampEmpire 5"
+                    />
+                    <img
+                        src="hosted/images/vampempire6.webp"
+                        alt="VampEmpire 6"
+                    />
+                </div>
+                <div class="right">
+                    
+                    <h1>Design Iteration: The Tyrant</h1>
+                    <p>
+                        After receiving playtest feedback, my team and I found that The Tyrant's abilities were too overwhelming to other players. 
+                        As a result, I had to redesign not only some of the abilities, but also balance the cost of each ability with when it should be unlocked.
+                    </p>
+                    <p>
+                        With the new redesigns for The Tyrant, my team and I conducted another playtest and found that players enjoyed the game more and found it more balanced and fun.
+                        Playing The Tyrant still gave the player the early game dominance factor. As the game progressed, other players would grow and begin to match The Tyrant's power,
+                        resulting in a more balanced and fair mid-late game flow.
+                    </p>
+                    <p>The images shows The Tyrant's initial design and final design</p>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/vampempire7.webp"
+                        alt="VampEmpire 7"
+                    />
+                    <img
+                        src="hosted/images/vampempire8.webp"
+                        alt="VampEmpire 8"
+                    />
+                </div>
+                <div class="right">
+                    <h1>Design Iteration: The Lumbering Beast</h1>
+                    <p>
+                        The Lumbering Beast is a late game force that should not be reckoned with. It's core mechanic is that it starts the game slow compared to other
+                        player's characters. However, as the game progresses, The Lumbering Beast begins to snowball and grow in both power and size. When the game enters
+                        the late stages, The Lumbering Beast will be an unstoppable force.
+                    </p>
+                    <p>
+                        Similar to The Tyrant, players felt The Lumbering Beast's initial design felt too powerful in the mid-late game states. The Lumbering Beast did in fact
+                        start the game slow compared to other players, which is what our team aimed for. However, it was still necessary to balance The Lumbering Beast's abilities.
+                        With the new balance changes, players agreed that The Lumbering Beast did not ramp up in power too fast. The game flow felt more balanced in that the growth in power
+                        between other players were equal or about the same. By late game, The Lumbering Beast still maintained it's dominance in power and size.
+                    </p>
+                    <p>The images shows The Lumbering Beast's initial design and final design</p>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    
+                    <img
+                        src="hosted/images/vampempire9.webp"
+                        alt="VampEmpire 9"
+                    />
+                </div>
+                <div class="right">
+                    <h1>Soul Board Design</h1>
+                    <p>
+                        I designed the Soul cards so players can easily keep track of how many souls they currently have. 
+                        The numbers on the board indicate the number of souls required to unlock that ability on the player's respective character card.
+                    </p>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/vampempire10.webp"
+                        alt="VampEmpire 10"
+                    />
+                </div>
+                <div class="right">
+                    <h1>Ritual Cards Design</h1>
+                    <p>
+                        I assisted my team in designing the flavor and effects of some Ritual cards. 
+                        The main mindset when designing these cards were to have them offer unique effects
+                        from all 4 character's abilities. These Ritual card effects should also feel like universal effects
+                        that all players, regardless of what character they are playing, feel impactful and contribute to helping
+                        them win the game. 
+                    </p>
+                    <p>
+                        I also assisted in balancing the Ritual cards as well. This entailed redesigning some cards entirely, especially 
+                        their effects and also balancing X variable values (i.e - cost to play the Ritual card, how many Bodies or Souls 
+                        a player can take from target player, etc.)
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

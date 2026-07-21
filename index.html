@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Matthew Fong - Game Designer/Developer</title>
 
-        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
         <link href="hosted/css/index.css" rel="stylesheet" type="text/css" />
         <link
             href="hosted/css/mobileIndex.css"
@@ -50,13 +50,13 @@
             <div id="navbarLinks">
                 <img
                     id="dropdown"
-                    src="hosted/images/dropdown.png"
+                    src="hosted/images/dropdown.webp"
                     alt="dropdown icon"
                 />
                 <a id="logoAnchor" href="#aboutMe" class="navLinks"
                     ><img
                         id="logo"
-                        src="hosted/images/face_gray.png"
+                        src="hosted/images/face_gray.webp"
                         alt="face logo"
                 /></a>
             </div>
@@ -71,8 +71,21 @@
                     >
                 </li>
                 <li>
-                    <a id="projectsAnchor" href="#projects" class="navLinks"
-                        >Projects</a
+                    <a
+                        id="programmingAnchor"
+                        href="#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a id="artistAnchor" href="#artist" class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a id="designAnchor" href="#design" class="navLinks"
+                        >Designer</a
                     >
                 </li>
                 <li>
@@ -84,45 +97,77 @@
             </ul>
 
             <div id="shortcutLinks">
-                <a href="https://www.linkedin.com/in/matthewfong3/"
-                    ><img
-                        id="shortcutLinkedIn"
-                        src="hosted/images/linkedin_gray.png"
-                        alt="LinkedIn link"
-                /></a>
                 <a href="https://github.com/matthewfong3"
                     ><img
                         id="shortcutGithub"
-                        src="hosted/images/github_gray.png"
+                        src="hosted/images/github_gray.webp"
                         alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
                 /></a>
             </div>
         </nav>
 
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="#aboutMe"
+                        class="selected navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a id="respArtistAnchor" href="#artist" class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a id="respDesignAnchor" href="#design" class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a id="respContactsAnchor" href="#contacts" class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+        </div>
+
         <div id="content">
-            <section id="aboutMe">
-                <section id="leftAboutMe" class="leftAboutMe">
-                    <h3>
-                        Matthew Fong <br />
-                        Gameplay Programmer
-                    </h3>
+            <section id="aboutMe" class="odd">
+                <section id="title">
+                    <h1>Matthew Fong</h1>
+                    <h2>Gameplay Programmer</h2>
                 </section>
 
-                <section id="rightAboutMe" class="rightAboutMe">
+                <section id="intro">
                     <p>
                         I am currently pursuing my
                         <i
-                            >Master's of Science (MS) degree in game design and
-                            development</i
+                            >Master of Science (MS) degree in game design and
+                            development (GDD)</i
                         >
-                        also at RIT, expected May 2027. I graduated Rochester
-                        Institute of Technology (RIT), NY, with a
-                        <i
-                            >Bachelor of Science (BS) degree in game design and
-                            development</i
-                        >. Rather than game design and development, as my
-                        program covers a wide range of concepts, a better way of
-                        describing my skills and practices would be
+                        at RIT, expected May 2027, with a
+                        <i>Bachelor of Science (BS) degree in GDD</i>
+                        also at RIT. As my program covers a wide range of
+                        concepts, a better way of describing my skills and
+                        practices would be
                         <i
                             >designing and programming rich interactive
                             experiences.</i
@@ -130,14 +175,15 @@
                         <br /><br />
 
                         My main area of focus is <b>gameplay programming</b>,
-                        however, 3D art and modeling is always a field that
-                        intrigues me. As a developer, I am eager to continue
-                        growing, learning new concepts and challenging myself in
-                        both aspects of game design and game development.<br /><br />
+                        however, 3D art and modeling has always been a field
+                        that intrigues me. As a developer, I am eager to
+                        continue growing, learn new concepts and challenge
+                        myself in both aspects of game design and game
+                        development.<br /><br />
 
                         I have programmed in software languages such as
-                        <i><b>C++, JavaScript, C#</b></i
-                        >; and am familiar with tools such as
+                        <i><b>C++, C#, GDScript, and JavaScript</b></i
+                        >. I am familiar with tools such as
                         <i
                             ><b
                                 >HTML5, CSS3, Sass, ES6, NodeJS, ReactJS,
@@ -146,12 +192,12 @@
                                 (socket.io), and Canvas.</b
                             ></i
                         ><br />
-                        I also have worked with various software programs,
+                        I have also worked with various software programs,
                         including
                         <i
                             ><b
-                                >Unreal Engine 5, Blender, Visual Studio, VS
-                                Code, Unity and Autodesk Maya.</b
+                                >Unreal Engine 5, Blender, Godot, Visual Studio,
+                                VS Code, Unity and Autodesk Maya.</b
                             ></i
                         >
                     </p>
@@ -159,165 +205,311 @@
             </section>
 
             <section id="projects">
-                <div class="projects">
-                    <a class="fake-links" href="deserted.html">
-                        <img
-                            src="hosted/images/deserted_gray.png"
-                            alt="Deserted Game"
-                            data-file="deserted"
-                        />
-                        <p>Deserted Game</p>
-                    </a>
-                </div>
+                <section id="programming" class="projectTypes even">
+                    <h1>Programmer</h1>
+                    <div class="programmingFlex">
+                        <div class="projects">
+                            <a class="fake-links" href="deserted.html">
+                                <img
+                                    src="hosted/images/deserted_gray.webp"
+                                    alt="Deserted Game"
+                                    data-file="deserted"
+                                />
+                                <div>
+                                    <h3>Deserted</h3>
+                                    <p>FPS zombies survival game</p>
+                                    <p>
+                                        <b>Solo Developer</b>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
-                <div class="projects">
-                    <a class="fake-links" href="adventuretime.html">
-                        <img
-                            src="hosted/images/adventuretime_gray.png"
-                            alt="Adventure Time Game"
-                            data-file="adventuretime"
-                        />
-                        <p>Adventure Time</p>
-                    </a>
-                </div>
+                        <div class="projects">
+                            <a class="fake-links" href="tps-multiplayer.html">
+                                <img
+                                    src="hosted/images/tps_multiplayer_gray.webp"
+                                    alt="TPS Multiplayer Demo"
+                                    data-file="tps_multiplayer"
+                                />
+                                <div>
+                                    <h3>TPS Multiplayer</h3>
+                                    <p>
+                                        Third person shooter multiplayer demo in
+                                        C++
+                                    </p>
+                                    <p>
+                                        <b>Solo Developer</b>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
-                <div class="projects">
-                    <a class="fake-links" href="arcadejam.html">
-                        <img
-                            src="hosted/images/arcadeJam_gray.png"
-                            alt="Arcade-Jam"
-                            data-file="arcadeJam"
-                        />
-                        <p>Arcade-Jam</p>
-                    </a>
-                </div>
+                        <div class="projects">
+                            <a class="fake-links" href="interlinked.html">
+                                <img
+                                    src="hosted/images/interlinked_gray.webp"
+                                    alt="Interlinked Game"
+                                    data-file="interlinked"
+                                />
+                                <div>
+                                    <h3>Interlinked</h3>
+                                    <p>
+                                        FPS with abilities fighting against
+                                        intelligent AI enemies
+                                    </p>
+                                    <p>
+                                        <b
+                                            >Gameplay Programmer<br />AI
+                                            Programmer<br
+                                        /></b>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
-                <div class="projects">
-                    <a class="fake-links" href="kingoftheball.html">
-                        <img
-                            src="hosted/images/kingOfTheBall_gray.png"
-                            alt="King of the Ball"
-                            data-file="kingOfTheBall"
-                        />
-                        <p>King of the Ball</p>
-                    </a>
-                </div>
+                        <div class="projects">
+                            <a class="fake-links" href="spaceinvaders.html">
+                                <img
+                                    src="hosted/images/spaceinvaders_gray.webp"
+                                    alt="Space-Invaders Game"
+                                    data-file="spaceinvaders"
+                                />
+                                <div>
+                                    <h3>Space-Invaders 3D</h3>
+                                    <p>
+                                        Classic Space-Invaders in 3D with local
+                                        co-op
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Gameplay Programmer <br />
+                                            3D Modeler <br />
+                                            Level Designer <br />
+                                            UI Developer
+                                        </b>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
-                <div class="projects">
-                    <a class="fake-links" href="drawwithfriends.html">
-                        <img
-                            src="hosted/images/pictionary_gray.png"
-                            alt="Draw With Friends!"
-                            data-file="pictionary"
-                        />
-                        <p>Draw With Friends!</p>
-                    </a>
-                </div>
+                        <div class="projects">
+                            <a class="fake-links" href="ghost-man.html">
+                                <img
+                                    src="hosted/images/ghost-man_gray.webp"
+                                    alt="Ghost-Man Game"
+                                    data-file="ghost-man"
+                                />
+                                <h3>Ghost-Man</h3>
+                                <p>Reverse Pac-Man in 3D</p>
+                                <p>
+                                    <b
+                                        >Gameplay Programmer <br />
+                                        3D Modeler <br />
+                                        UI Developer</b
+                                    >
+                                </p>
+                            </a>
+                        </div>
 
-                <div class="projects">
-                    <a class="fake-links" href="dynamicdash.html">
-                        <img
-                            src="hosted/images/dynamicDash_gray.png"
-                            alt="Dynamic Dash Game"
-                            data-file="dynamicDash"
-                        />
-                        <p>Dynamic Dash Game</p>
-                    </a>
-                </div>
+                        <div class="projects">
+                            <a class="fake-links" href="adventuretime.html">
+                                <img
+                                    src="hosted/images/adventuretime_gray.webp"
+                                    alt="Adventure Time Game"
+                                    data-file="adventuretime"
+                                />
+                                <h3>Adventure Time</h3>
+                                <p>Simple 2D sidescrolling platformer</p>
+                                <p><b>Solo Developer</b></p>
+                            </a>
+                        </div>
 
-                <div class="projects">
-                    <a class="fake-links" href="cookie.html">
-                        <img
-                            src="hosted/images/cookie_gray.png"
-                            alt="Cookie"
-                            data-file="cookie"
-                        />
-                        <p>Cookie</p>
-                    </a>
-                </div>
+                        <div class="projects">
+                            <a class="fake-links" href="drawwithfriends.html">
+                                <img
+                                    src="hosted/images/pictionary_gray.webp"
+                                    alt="Draw With Friends!"
+                                    data-file="pictionary"
+                                />
+                                <h3>Draw With Friends!</h3>
+                                <p>4 player online pictionary game</p>
+                                <p><b>Solo Developer</b></p>
+                            </a>
+                        </div>
 
-                <div class="projects">
-                    <a class="fake-links" href="devilfruit.html">
-                        <img
-                            src="hosted/images/devilfruit_gray.png"
-                            alt='"One Piece" Devil Fruit'
-                            data-file="devilfruit"
-                        />
-                        <p>"One Piece" Devil Fruit</p>
-                    </a>
-                </div>
+                        <div class="projects">
+                            <a class="fake-links" href="kingoftheball.html">
+                                <img
+                                    src="hosted/images/kingOfTheBall_gray.webp"
+                                    alt="King of the Ball"
+                                    data-file="kingOfTheBall"
+                                />
+                                <h3>King of the ball</h3>
+                                <p>1v1 oddball platformer game</p>
+                                <p><b>Solo Developer</b></p>
+                            </a>
+                        </div>
 
-                <div class="projects">
-                    <a class="fake-links" href="chessenvironment.html">
-                        <img
-                            src="hosted/images/chess_environment_gray.png"
-                            alt="Chess Environment"
-                            data-file="chess_environment"
-                        />
-                        <p>Chess Environment</p>
-                    </a>
-                </div>
-
-                <div class="projects">
-                    <a class="fake-links" href="3Dmodels.html">
-                        <img
-                            src="hosted/images/rabbit_gray.png"
-                            alt="3D Models"
-                            data-file="rabbit"
-                        />
-                        <p>3D Models</p>
-                    </a>
-                </div>
-
-                <div class="projects">
-                    <a class="fake-links" href="tweeter.html">
-                        <img
-                            src="hosted/images/tweeter_gray.png"
-                            alt="Tweeter"
-                            data-file="tweeter"
-                        />
-                        <p>Tweeter (Twitter Clone)</p>
-                    </a>
-                </div>
-
-                <div class="projects">
-                    <a class="fake-links" href="audioviz.html">
-                        <img
-                            src="hosted/images/audioviz_gray.png"
-                            alt="Audio Visualizer"
-                            data-file="audioviz"
-                        />
-                        <p>Audio Visualizer</p>
-                    </a>
-                </div>
-            </section>
-
-            <section id="contacts">
-                <section id="leftContacts" class="leftContacts">
-                    <h3>Contacts</h3>
-                    <p>
-                        Phone: 347-551-0888 <br />
-                        Email: matthewfong3 [AT] gmail [DOT] com
-                    </p>
-                </section>
-
-                <section id="rightContacts" class="rightContacts">
-                    <h3>Stalk Me</h3>
-                    <div id="links">
-                        <a href="https://github.com/matthewfong3"
-                            ><img
-                                id="Github"
-                                src="hosted/images/github.png"
-                                alt="Github link"
-                        /></a>
-                        <a href="https://www.linkedin.com/in/matthewfong3/"
-                            ><img
-                                id="LinkedIn"
-                                src="hosted/images/linkedin.png"
-                                alt="LinkedIn Link"
-                        /></a>
+                        <div class="projects">
+                            <a class="fake-links" href="dynamicdash.html">
+                                <img
+                                    src="hosted/images/dynamicDash_gray.webp"
+                                    alt="Dynamic Dash Game"
+                                    data-file="dynamicDash"
+                                />
+                                <h3>Dynamic Dash</h3>
+                                <p>
+                                    2D 1v1 local racing platformer with
+                                    abilities
+                                </p>
+                                <p>
+                                    <b
+                                        >Gameplay Programmer <br />
+                                        Level Designer <br />
+                                        UI Developer</b
+                                    >
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </section>
+
+                <section id="artist" class="projectTypes odd">
+                    <h1>Artist</h1>
+                    <div class="artistFlex">
+                        <div class="projects">
+                            <a class="fake-links" href="cookie.html">
+                                <img
+                                    src="hosted/images/cookie_gray.webp"
+                                    alt="Cookie"
+                                    data-file="cookie"
+                                />
+                                <h3>Cookie</h3>
+                                <p>
+                                    3D cookie model rendered with animations,
+                                    lighting and compositing
+                                </p>
+                                <p><b>Solo Artist</b></p>
+                            </a>
+                        </div>
+
+                        <div class="projects">
+                            <a class="fake-links" href="devilfruit.html">
+                                <img
+                                    src="hosted/images/devilfruit_gray.webp"
+                                    alt='"One Piece" Devil Fruit'
+                                    data-file="devilfruit"
+                                />
+                                <h3>"One Piece" Devil Fruit</h3>
+                                <p>
+                                    3D fruit model rendered with animations,
+                                    lighting and compositing
+                                </p>
+                                <p><b>Solo Artist</b></p>
+                            </a>
+                        </div>
+
+                        <div class="projects">
+                            <a class="fake-links" href="chessenvironment.html">
+                                <img
+                                    src="hosted/images/chess_environment_gray.webp"
+                                    alt="Chess Environment"
+                                    data-file="chess_environment"
+                                />
+                                <h3>Chess Environment</h3>
+                                <p>
+                                    Full 3D chess set modeled and rendered with
+                                    animations, lighting and compositing
+                                </p>
+                                <p><b>Solo Artist</b></p>
+                            </a>
+                        </div>
+
+                        <div class="projects">
+                            <a class="fake-links" href="3Dmodels.html">
+                                <img
+                                    src="hosted/images/rabbit_gray.webp"
+                                    alt="3D Models"
+                                    data-file="rabbit"
+                                />
+                                <h3>3D Models</h3>
+                                <p>Collection of various 3D models</p>
+                                <p><b>Solo Artist</b></p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="design" class="projectTypes even">
+                    <h1>Designer</h1>
+                    <div class="designFlex">
+                        <div class="projects">
+                            <a class="fake-links" href="vampempire.html">
+                                <img
+                                    src="hosted/images/vampempire_gray.webp"
+                                    alt="Vamp Empire Game"
+                                    data-file="vampempire"
+                                />
+                                <h3>Vampempire</h3>
+                                <p>4 player territory-control board game</p>
+                                <p>
+                                    <b
+                                        >Character Designer <br />
+                                        Abilities Designer <br />
+                                        Card Designer</b
+                                    >
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="projects">
+                            <a class="fake-links" href="csgomaps.html">
+                                <img
+                                    src="hosted/images/csgo-maps_gray.webp"
+                                    alt="CSGO Maps"
+                                    data-file="csgo-maps"
+                                />
+                                <h3>CS:GO Maps</h3>
+                                <p>
+                                    3 maps designed, assembled and textured for
+                                    CS:GO
+                                </p>
+                                <p><b>Solo Level Designer</b></p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="contacts" class="odd">
+                <div id="contactsInfo">
+                    <section>
+                        <h3>Contacts</h3>
+                        <p>
+                            Email: matthewfong3 [AT] gmail [DOT] com<br />
+                            Phone: 347-551-0888
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Stalk Me</h3>
+                        <div id="links">
+                            <a href="https://github.com/matthewfong3"
+                                ><img
+                                    id="Github"
+                                    src="hosted/images/github.webp"
+                                    alt="Github link"
+                            /></a>
+                            <a href="https://www.linkedin.com/in/matthewfong3/"
+                                ><img
+                                    id="LinkedIn"
+                                    src="hosted/images/linkedin.webp"
+                                    alt="LinkedIn Link"
+                            /></a>
+                        </div>
+                    </section>
+                </div>
             </section>
         </div>
 

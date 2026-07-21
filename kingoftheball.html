@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Matthew Fong - Game Designer/Developer</title>
 
-        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
         <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
         <link
             href="hosted/css/mobileProjects.css"
@@ -50,33 +50,55 @@
             <div id="navbarLinks">
                 <img
                     id="dropdown"
-                    src="hosted/images/dropdown.png"
+                    src="hosted/images/dropdown.webp"
                     alt="dropdown icon"
                 />
                 <a href="index.html" class="navLinks"
                     ><img
                         id="logo"
-                        src="hosted/images/face_gray.png"
+                        src="hosted/images/face_gray.webp"
                         alt="face logo"
                 /></a>
             </div>
 
             <ul id="navbarList">
                 <li>
-                    <a id="aboutMeAnchor" href="index.html#aboutMe" class="navLinks"
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
                         >About Me</a
                     >
                 </li>
                 <li>
                     <a
-                        id="projectsAnchor"
-                        href="index.html#projects"
+                        id="programmingAnchor"
+                        href="index.html#programming"
                         class="selected navLinks"
-                        >Projects</a
+                        >Programmer</a
                     >
                 </li>
                 <li>
-                    <a id="contactsAnchor" href="index.html#contacts" class="navLinks"
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
                         >Contacts</a
                     >
                 </li>
@@ -84,152 +106,168 @@
             </ul>
 
             <div id="shortcutLinks">
-                <a href="https://www.linkedin.com/in/matthewfong3/"
-                    ><img
-                        id="shortcutLinkedIn"
-                        src="hosted/images/linkedin_gray.png"
-                        alt="LinkedIn link"
-                /></a>
                 <a href="https://github.com/matthewfong3"
                     ><img
                         id="shortcutGithub"
-                        src="hosted/images/github_gray.png"
+                        src="hosted/images/github_gray.webp"
                         alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
                 /></a>
             </div>
         </nav>
 
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
         <div id="projectContent">
-            <div class="reactComponent">
-                <div id="slider-container">
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/kingOfTheBall1.png"
-                            alt="King of the Ball 1"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/kingOfTheBall2.png"
-                            alt="King of the Ball 2"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/kingOfTheBall3.png"
-                            alt="King of the Ball 3"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/kingOfTheBall4.png"
-                            alt="King of the Ball 4"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/kingOfTheBall5.png"
-                            alt="King of the Ball 5"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/kingOfTheBall6.png"
-                            alt="King of the Ball 6"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/kingOfTheBall7.png"
-                            alt="King of the Ball 7"
-                        />
-                    </div>
-    
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+            <section id="cover" class="odd">
+                <img src="hosted/images/kingOfTheBall6.webp" />
+                <!--<a href="https://matthewfong3.github.io/king-of-the-ball/">
+                    <button>PLAY THE GAME</button>
+                </a>-->
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/kingOfTheBall1.webp"
+                        alt="King of the Ball 1"
+                    />
+                    <img
+                        src="hosted/images/kingOfTheBall5.webp"
+                        alt="King of the Ball 5"
+                    />
                 </div>
-    
-                <div id="dotsDiv">
-                    <span class="dots" data-i="0"></span>
-                    <span class="dots" data-i="1"></span>
-                    <span class="dots" data-i="2"></span>
-                    <span class="dots" data-i="3"></span>
-                    <span class="dots" data-i="4"></span>
-                    <span class="dots" data-i="5"></span>
-                    <span class="dots" data-i="6"></span>
+                <div class="right">
+                    <h1>King of the Ball</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        Heavily inspired by PlayStation's
+                        <i>BaraBariBall</i> and old web layouts of flash games,
+                        <i>King of the Ball</i> is a local 1-versus-1
+                        arcade-party game. This project features 3 custom
+                        levels, implementation of game physics (constant gravity
+                        force), basic player movement & jumping, and player
+                        interactions (players can pick up the ball from the
+                        ground or steal the ball from the other player holding
+                        it). The game mode is based on Microsoft Halo's OddBall
+                        game mode, in which players try to hold onto the ball
+                        for as long as they can while being in their respective
+                        color regions to gain points. The player with the most
+                        points after the timer expires wins. <br />
+                        <br />
+                        This project demonstrates understanding and utilization
+                        of HTML5's canvas element by updating game logic and
+                        animations and then displaying these updates on the
+                        canvas for players.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">HTML5, CSS3, JavaScript, Canvas</p>
+                    <h3>Platform</h3>
+                    <p class="p">Desktop Browser</p>
+                    <h3>Duration</h3>
+                    <p class="p">Less than 6 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">Solo Developer</p>
                 </div>
-    
-                <h3>King of the Ball</h3>
-    
-                <div class="description">
-                    <section class="left">
-                        <h4>Overview</h4>
-                        <p>
-                            Heavily inspired by PlayStation's <i>BaraBariBall</i>,
-                            King of the Ball is a local 1-versus-1 arcade-party
-                            game. This project features 3 custom levels,
-                            implementation of game physics (constant gravity force),
-                            basic player movement & jumping, and player interactions
-                            (players can pick up the ball from the ground or steal
-                            the ball from the other player holding it). The game
-                            mode is based on Microsoft Halo's OddBall game mode, in
-                            which players try to hold onto the ball for as long as
-                            they can while being in their respective color regions
-                            to gain points. The player with the most points after
-                            the timer expires wins. <br />
-                            <br />
-                            This project demonstrates understanding and utilization
-                            of HTML5's canvas element by updating game logic and
-                            animations and then displaying these updates on the
-                            canvas for players.
-                        </p>
-                        <h4>Tools used</h4>
-                        <p class="p">HTML5, CSS3, JavaScript, Canvas</p>
-                        <h4>Role</h4>
-                        <p class="p">Programmer & Designer</p>
-                        <p>
-                            - Programmed game physics, core mechanics, and
-                            functionality of the game using Object-Oriented
-                            Programming, such as
-                            <ul>
-                                <li>simple physics system (collision detection)</li>
-                            </ul>
-                        </p>
-                        
-                    </section>
-    
-                    <section class="right">
-                        <h4>Role (Cont.)</h4>
-                        <p>
-                            <ul>
-                                <li>bounding boxes</li>
-                                <li>player movement and interactions</li>
-                                <li>player and ball respawn logic</li>
-                            </ul>
-                            - Sprite Animations <br />
-                            - Sound Design (sound effects, background music)
-                            <br />
-                            - Designed style/look and feel of the game <br />
-                            - Designed level layouts <br />- Designed game menus
-                        </p>
-                        <h4>Platform</h4>
-                        <p class="p">Desktop Browser</p>
-                        <h4>Duration</h4>
-                        <p class="p">Less than 6 weeks</p>
-                        <h4>Team size</h4>
-                        <p class="p">1</p>
-    
-                        <p>
-                            <b>
-                                <span>Play the Game! </span>
-                                <a href="https://matthewfong3.github.io/king-of-the-ball/">
-                                    King of the Ball
-                                </a>
-                            </b>
-                        </p>
-                    </section>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/kingOfTheBall2.webp"
+                        alt="King of the Ball 2"
+                    />
                 </div>
-            </div>
+                <div class="right">
+                    <h3>Role: Gameplay Programmer</h3>
+                    <ul>
+                        <li>
+                            Programmed a simple game physics system (collision
+                            detection with AABB and sphere)
+                        </li>
+                        <li>
+                            Programmed player controls including player movement
+                            and interactions
+                        </li>
+                        <li>Programmed the player and ball respawn logic</li>
+                        <li>Implemented 2D animations with sprites</li>
+                        <li>
+                            Implemented different game states and UI (start
+                            menu, controls menu, level select screen, in-game
+                            and game over screen)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/kingOfTheBall4.webp"
+                        alt="King of the Ball 4"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role: Designer</h3>
+                    <ul>
+                        <li>Sound Design (sound effects, background music)</li>
+                        <li>Designed style/look and feel of the game</li>
+                        <li>Designed level layouts</li>
+                        <li>Designed game menus</li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
         <footer id="footer">

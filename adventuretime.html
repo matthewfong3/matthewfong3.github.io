@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Matthew Fong - Game Designer/Developer</title>
 
-        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
         <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
         <link
             href="hosted/css/mobileProjects.css"
@@ -50,13 +50,13 @@
             <div id="navbarLinks">
                 <img
                     id="dropdown"
-                    src="hosted/images/dropdown.png"
+                    src="hosted/images/dropdown.webp"
                     alt="dropdown icon"
                 />
                 <a href="index.html" class="navLinks"
                     ><img
                         id="logo"
-                        src="hosted/images/face_gray.png"
+                        src="hosted/images/face_gray.webp"
                         alt="face logo"
                 /></a>
             </div>
@@ -72,10 +72,26 @@
                 </li>
                 <li>
                     <a
-                        id="projectsAnchor"
-                        href="index.html#projects"
+                        id="programmingAnchor"
+                        href="index.html#programming"
                         class="selected navLinks"
-                        >Projects</a
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
                     >
                 </li>
                 <li>
@@ -90,116 +106,173 @@
             </ul>
 
             <div id="shortcutLinks">
-                <a href="https://www.linkedin.com/in/matthewfong3/"
-                    ><img
-                        id="shortcutLinkedIn"
-                        src="hosted/images/linkedin_gray.png"
-                        alt="LinkedIn link"
-                /></a>
                 <a href="https://github.com/matthewfong3"
                     ><img
                         id="shortcutGithub"
-                        src="hosted/images/github_gray.png"
+                        src="hosted/images/github_gray.webp"
                         alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
                 /></a>
             </div>
         </nav>
 
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
         <div id="projectContent">
-            <div class="reactComponent">
-                <div id="slider-container">
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/adventuretime1.png"
-                            alt="Adventure Time 1"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/adventuretime2.png"
-                            alt="Adventure Time 2"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/adventuretime3.png"
-                            alt="Adventure Time 3"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/adventuretime4.png"
-                            alt="Adventure Time 4"
-                        />
-                    </div>
+            <section id="cover" class="odd">
+                <img src="hosted/images/adventuretime1.webp" />
+                <!--<a href="https://unshaide.itch.io/adventure-time">
+                    <button>PLAY THE GAME</button>
+                </a>-->
+            </section>
 
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/adventuretime2.webp"
+                        alt="Adventure Time 2"
+                    />
                 </div>
-
-                <div id="dotsDiv">
-                    <span class="dots" data-i="0"></span>
-                    <span class="dots" data-i="1"></span>
-                    <span class="dots" data-i="2"></span>
-                    <span class="dots" data-i="3"></span>
+                <div class="right">
+                    <h1>Adventure Time</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        <i>Adventure Time</i> is a simple 2D side scrolling
+                        retro platform game. The player must traverse through
+                        the level while fighting various different types of
+                        enemies and avoiding spike traps. Throughout the level,
+                        the player may find and collect gems and health (hearts)
+                        to replenish their health after surviving previous
+                        encounters with enemies.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">Unreal Engine 5, Paper2D, Blueprints</p>
+                    <h3>Platform</h3>
+                    <p class="p">Windows</p>
+                    <h3>Duration</h3>
+                    <p class="p">Less than 4 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">Solo Developer</p>
                 </div>
+            </section>
 
-                <h3>Adventure Time</h3>
-
-                <div class="description">
-                    <section class="left">
-                        <h4>Overview</h4>
-                        <p>
-                            Adventure Time is a simple 2D side scrolling retro
-                            platform game. The player must traverse through the
-                            level while fighting various different types of
-                            enemies and avoiding spike traps. Throughout the
-                            level, the player may find and collect gems and
-                            health (hearts) to replenish their health after
-                            surviving previous encounters with enemies.
-                        </p>
-                        <h4>Tools used</h4>
-                        <p class="p">Unreal Engine 5, Paper2D, Blueprints</p>
-                        <h4>Role</h4>
-                        <p class="p">
-                            - Programmed player controls, such as movement,
-                            jumping, attacking <br />
-                            - Programmed various enemy AI logic using AI
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/adventuretime3.webp"
+                        alt="Adventure Time 3"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role- Gameplay Programmer</h3>
+                    <ul>
+                        <li>
+                            Programmed player controls, such as movement,
+                            jumping and attacking
+                        </li>
+                        <li>
+                            Programmed enemy hit stop effect when player attacks
+                        </li>
+                        <li>
+                            Implemented a sprite flicker effect when the player
+                            and enemies are hit
+                        </li>
+                        <li>
+                            Spawned a hit particle effect on enemies to add more
+                            in-game juice and allow player attacks to feel more
+                            powerful
+                        </li>
+                        <li>
+                            Programmed various enemy AI logic using AI
                             Controller, such as edge detection, enemy detection,
                             simple autonomous behavior (seeking when the player
-                            is in range or free roaming) <br />
-                            - Implemented player health system, syncing update
-                            logic with widget blueprints to display current
-                            health or game over (death) screen <br />
-                        </p>
-                    </section>
+                            is in range or free roaming)
+                        </li>
+                        <li>
+                            Programmed heart pick ups that replenish the
+                            player's health
+                        </li>
+                        <li>Programmed gem collectibles</li>
 
-                    <section class="right">
-                        <h4>Role (Cont.)</h4>
-                        <p>
-                            - Developed the game states and transition logic
-                            between the different game states <br />
-                            - Designed the layout and flow of the level
-                        </p>
-                        <h4>Platform</h4>
-                        <p class="p">Windows</p>
-                        <h4>Duration</h4>
-                        <p class="p">Less than 4 weeks</p>
-                        <h4>Team size</h4>
-                        <p class="p">1</p>
-                        <p>
-                            <b>
-                                <span>Play the Game! </span>
-                                <a
-                                    href="https://unshaide.itch.io/adventure-time"
-                                >
-                                    Adventure Time!
-                                </a>
-                            </b>
-                        </p>
-                    </section>
+                        <li>
+                            Implemented player health system, syncing update
+                            logic with widget blueprints to display current
+                            health or game over (death) screen
+                        </li>
+                        <li>
+                            Developed the game states and transition logic
+                            between the different game states
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/adventuretime4.webp"
+                        alt="Adventure Time 4"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role: Designer</h3>
+                    <ul>
+                        <li>Designed the layout and flow of the level</li>
+                        <li>Assembled the level with tilemaps</li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
         <footer id="footer">

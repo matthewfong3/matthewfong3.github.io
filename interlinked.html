@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.webp"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.webp"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="programmingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.webp"
+                        alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="projectContent">
+            <section id="cover" class="odd">
+                <img src="hosted/images/interlinked_cover.webp" />
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img src="hosted/images/digitize.webp" alt="Digitize gif" />
+                    <span>Digitize spell</span>
+                </div>
+                <div class="right">
+                    <h1>Interlinked</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        <i>Interlinked</i> is a 3D first person action game. The
+                        player navigates through a level, unlocking ability
+                        spells and fighting various types of AI enemies, each
+                        with their own unique behaviors. After defeating an
+                        enemy, the player may scavenge the dead for parts to
+                        further enhance their abilities.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">
+                        Unreal Engine 5, Blueprints, C++, Animation Blueprints
+                    </p>
+                    <h3>Platform</h3>
+                    <p class="p">Desktop Browser</p>
+                    <h3>Duration</h3>
+                    <p class="p">Less than 15 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">13</p>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img src="hosted/images/lifedash.webp" alt="LifeDash gif" />
+                    <span>Life Dash spell</span>
+                </div>
+                <div class="right">
+                    <h3>Role: Gameplay Programmer</h3>
+                    <ul>
+                        <li>
+                            Programmed Digitize spell, an ability that fires
+                            three consecutive projectiles at target location,
+                            damaging any enemies hit
+                        </li>
+                        <li>
+                            Programmed Life Dash spell, an ability that allows
+                            the player the dash through enemies, dealing damage
+                            and siphoning health
+                        </li>
+                        <li>
+                            Refactored the spells implementation to utilize
+                            Unreal Engine's Gameplay Ability System (GAS)
+                        </li>
+
+                        <li>
+                            Programmed AI affiliations with C++ to allow all AI
+                            enemies to detect other actors (player, other AI)
+                            and treat them properly, changing the tasks carried
+                            out in their respective behavior trees
+                        </li>
+                        <li>
+                            Implemented the solo behavior tree for C.C.G. (one
+                            of the three AI enemies)
+                        </li>
+                        <li>
+                            Implemented the group behavior tree for Torture
+                            Nexus (another AI enemy)
+                        </li>
+                        <li>
+                            Implemented procedural walk animations for Torture
+                            Nexus with Unreal Engine's control rig and locomotor
+                        </li>
+                        <li>
+                            Implemented Torture Nexus animations with animation
+                            blueprints and montages
+                        </li>
+                        <li>Implemented animations for the Lockjaw spell</li>
+                        <li>Debugged various bug fixes</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/affiliations.webp"
+                        alt="AI Affiliations C++"
+                    />
+                    <span>AI Affiliations in C++</span>
+                </div>
+                <div class="right">
+                    <h3>Role: Designer</h3>
+                    <ul>
+                        <li>
+                            Designed the code architecture of the player's six
+                            ability spells
+                        </li>
+                        <li>Designed C.C.G. solo behavior tree</li>
+                        <li>
+                            Designed the group behavior tree for Torture Nexus
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img src="hosted/images/ccg.webp" alt="CCG BT gif" />
+                    <span>C.C.G. solo behavior tree</span>
+                </div>
+                <div class="right">
+                    I successfully implemented the solo behavior tree for
+                    C.C.G., which includes tasks such as detecting the player
+                    with line of sight, chasing (seeking) the player, and
+                    patrolling to random locations when they lose sight of the
+                    player.
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img src="hosted/images/tn_bt.webp" alt="TN BT" />
+                    <span>Torture Nexus group behavior tree</span>
+                </div>
+                <div class="right">
+                    <p>
+                        I also implemented the group behavior tree for Torture
+                        Nexus. This includes tasks such as detecting Meatloaf
+                        (another AI enemy) and mounting Meatloaf (when in
+                        range), detaching from a dead Meatloaf, transitioning
+                        from the ground to the ceiling, navigating on the
+                        ceiling, and transitioning back to the ground.
+                    </p>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img src="hosted/images/tn_crawl.webp" alt="TN Crawl gif" />
+                    <span>Torture Nexus transitioning to ceiling</span>
+                </div>
+                <div class="right">
+                    <p>
+                        Here is Torture Nexus transitioning from the ground to
+                        the ceiling, showcasing the AI's task changing in it's
+                        behavior tree in response to changes in the game
+                        environment.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

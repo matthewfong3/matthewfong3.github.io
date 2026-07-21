@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Matthew Fong - Game Designer/Developer</title>
 
-        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
         <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
         <link
             href="hosted/css/mobileProjects.css"
@@ -50,13 +50,13 @@
             <div id="navbarLinks">
                 <img
                     id="dropdown"
-                    src="hosted/images/dropdown.png"
+                    src="hosted/images/dropdown.webp"
                     alt="dropdown icon"
                 />
                 <a href="index.html" class="navLinks"
                     ><img
                         id="logo"
-                        src="hosted/images/face_gray.png"
+                        src="hosted/images/face_gray.webp"
                         alt="face logo"
                 /></a>
             </div>
@@ -72,10 +72,26 @@
                 </li>
                 <li>
                     <a
-                        id="projectsAnchor"
-                        href="index.html#projects"
+                        id="programmingAnchor"
+                        href="index.html#programming"
                         class="selected navLinks"
-                        >Projects</a
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
                     >
                 </li>
                 <li>
@@ -90,115 +106,169 @@
             </ul>
 
             <div id="shortcutLinks">
-                <a href="https://www.linkedin.com/in/matthewfong3/"
-                    ><img
-                        id="shortcutLinkedIn"
-                        src="hosted/images/linkedin_gray.png"
-                        alt="LinkedIn link"
-                /></a>
                 <a href="https://github.com/matthewfong3"
                     ><img
                         id="shortcutGithub"
-                        src="hosted/images/github_gray.png"
+                        src="hosted/images/github_gray.webp"
                         alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
                 /></a>
             </div>
         </nav>
 
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
         <div id="projectContent">
-            <div class="reactComponent">
-                <div id="slider-container">
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/dynamicDash1.png"
-                            alt="dynamic dash 1"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/dynamicDash2.png"
-                            alt="dynamic dash 2"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/dynamicDash3.png"
-                            alt="dynamic dash 3"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/dynamicDash4.png"
-                            alt="dynamic dash 4"
-                        />
-                    </div>
-
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+            <section id="cover" class="odd">
+                <img src="hosted/images/dynamicDash1.webp" />
+            </section>
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/dynamicDash2.webp"
+                        alt="dynamic dash 2"
+                    />
                 </div>
-
-                <div id="dotsDiv">
-                    <span class="dots" data-i="0"></span>
-                    <span class="dots" data-i="1"></span>
-                    <span class="dots" data-i="2"></span>
-                    <span class="dots" data-i="3"></span>
+                <div class="right">
+                    <h1>Dynamic Dash</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        Influenced by Steam's <i>SpeedRunners</i> game,
+                        <i>Dynamic Dash</i> is a two player, 1-versus-1 2D
+                        side-scrolling game. <i>Dynamic Dash</i> is a
+                        split-screen racing game in which both player 1 (red)
+                        and player 2 (blue) compete against each other to reach
+                        the finish line first. As the players traverse through
+                        each level while dodging obstacles, both players can
+                        collect coins, which can be spent to use power-up
+                        abilities to give themselves a slight boost, a shield,
+                        or interfere with the other player by slowing them down.
+                        <br />
+                        <br />
+                        My main role for this project was designing and
+                        developing the power-up abilities and handling the logic
+                        behind how they interact with each other and the
+                        players. I was also responsible for designing the
+                        levels/courses of the game, as well as designing the GUI
+                        and UI menus for the game.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">Visual Studio, C#, Unity</p>
+                    <h3>Platform:</h3>
+                    <p class="p">Windows</p>
+                    <h3>Duration</h3>
+                    <p class="p">5 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">5</p>
                 </div>
+            </section>
 
-                <h3>Dynamic Dash Game</h3>
-
-                <div class="description">
-                    <section class="left">
-                        <h4>Overview</h4>
-                        <p>
-                            Influenced by Steam's <i>SpeedRunners</i> game,
-                            Dynamic Dash is a two player, 1-versus-1 2D
-                            side-scrolling game. Dynamic Dash is a split-screen
-                            racing game in which both player 1 (red) and player
-                            2 (blue) compete against each other to reach the
-                            finish line first. As the players traverse through
-                            each level while dodging obstacles, both players can
-                            collect coins, which can be spent to use power-up
-                            abilities to give themselves a slight boost, a
-                            shield, or interfere with the other player by
-                            slowing them down. <br />
-                            <br />
-                            My main role for this project was designing and
-                            developing the power-up abilities and handling the
-                            logic behind how they interact with each other and
-                            the players. I was also responsible for designing
-                            the levels/courses of the game, as well as designing
-                            the GUI and UI menus for the game.
-                        </p>
-                        <h4>Tools used</h4>
-                        <p class="p">Visual Studio, C#, Unity</p>
-                        <h4>Role</h4>
-                        <p class="p">Programmer & Level Designer</p>
-                        <p>
-                            - Programmed & implemented some core mechanics of
-                            the game using Object-Oriented Programming, such as
-                            Power-Up abilities, in C# <br />
-                        </p>
-                    </section>
-
-                    <section class="right">
-                        <h4>Role (Cont.)</h4>
-                        <p>
-                            - Wrote C# scripts to handle the interactions
-                            between different power-up abilities and how they
-                            affect the players <br />
-                            - Designed GUI/UI elements and game menus in Unity
-                            <br />
-                            - Designed layout of game levels in Unity editor
-                        </p>
-                        <h4>Platform:</h4>
-                        <p class="p">Windows</p>
-                        <h4>Duration</h4>
-                        <p class="p">5 weeks</p>
-                        <h4>Team size</h4>
-                        <p class="p">5</p>
-                    </section>
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/dynamicDash3.webp"
+                        alt="dynamic dash 3"
+                    />
                 </div>
-            </div>
+                <div class="right">
+                    <h3>Role: Gameplay Programmer</h3>
+                    <ul>
+                        <li>
+                            Programmed all power-up abilities in C#, such as
+                            laser beam, shield and temporary speed boost
+                        </li>
+                        <li>
+                            Linked player coins to the power-ups system so
+                            players must collect coins to unlock and use
+                            power-up abilities
+                        </li>
+                        <li>
+                            Wrote C# scripts to handle the interactions between
+                            different power-up abilities and how they affect the
+                            players
+                        </li>
+                        <li>
+                            Implemented the game menus, such as start menu,
+                            controls and game over screen
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/dynamicDash3.webp"
+                        alt="dynamic dash 4"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role: Designer</h3>
+                    <ul>
+                        <li>
+                            Designed the 3 power-up abilities (laser beam that
+                            temporarily slows another player, shield that blocks
+                            the laser beam, and a temporary speed boost)
+                        </li>
+                        <li>
+                            Designed layout and flow of game levels in Unity
+                        </li>
+                        <li>Designed GUI/UI elements in the game</li>
+                        <li>Designed the layout and UI of the game menus</li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
         <footer id="footer">

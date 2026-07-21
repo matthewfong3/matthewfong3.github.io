@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Matthew Fong - Game Designer/Developer</title>
 
-        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
         <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
         <link
             href="hosted/css/mobileProjects.css"
@@ -50,33 +50,55 @@
             <div id="navbarLinks">
                 <img
                     id="dropdown"
-                    src="hosted/images/dropdown.png"
+                    src="hosted/images/dropdown.webp"
                     alt="dropdown icon"
                 />
                 <a href="index.html" class="navLinks"
                     ><img
                         id="logo"
-                        src="hosted/images/face_gray.png"
+                        src="hosted/images/face_gray.webp"
                         alt="face logo"
                 /></a>
             </div>
 
             <ul id="navbarList">
                 <li>
-                    <a id="aboutMeAnchor" href="index.html#aboutMe" class="navLinks"
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
                         >About Me</a
                     >
                 </li>
                 <li>
                     <a
-                        id="projectsAnchor"
-                        href="index.html#projects"
+                        id="programmingAnchor"
+                        href="index.html#programming"
                         class="selected navLinks"
-                        >Projects</a
+                        >Programmer</a
                     >
                 </li>
                 <li>
-                    <a id="contactsAnchor" href="index.html#contacts" class="navLinks"
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
                         >Contacts</a
                     >
                 </li>
@@ -84,152 +106,174 @@
             </ul>
 
             <div id="shortcutLinks">
-                <a href="https://www.linkedin.com/in/matthewfong3/"
-                    ><img
-                        id="shortcutLinkedIn"
-                        src="hosted/images/linkedin_gray.png"
-                        alt="LinkedIn link"
-                /></a>
                 <a href="https://github.com/matthewfong3"
                     ><img
                         id="shortcutGithub"
-                        src="hosted/images/github_gray.png"
+                        src="hosted/images/github_gray.webp"
                         alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
                 /></a>
             </div>
         </nav>
 
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
         <div id="projectContent">
-            <div class="reactComponent">
-                <div id="slider-container">
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/pictionary1.png"
-                            alt="pictionary 1"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img 
-                            src="hosted/images/pictionary2.png"
-                            alt="pictionary 2"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/pictionary3.png"
-                            alt="pictionary 3"
-                        />
-                    </div>
-                    <div class="slides fade">
-                        <img
-                            src="hosted/images/pictionary4.png"
-                            alt="pictionary 4"
-                        />
-                    </div>
-    
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+            <section id="cover" class="odd">
+                <img src="hosted/images/pictionary1.webp" />
+                <!--<a href="https://pictionary-n42s.onrender.com/">
+                    <button>PLAY THE GAME</button>
+                </a>-->
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/pictionary2.webp"
+                        alt="pictionary 2"
+                    />
                 </div>
-    
-                <div id="dotsDiv">
-                    <span class="dots" data-i="0"></span>
-                    <span class="dots" data-i="1"></span>
-                    <span class="dots" data-i="2"></span>
-                    <span class="dots" data-i="3"></span>
+                <div class="right">
+                    <h1>Draw With Friends!</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        <i>Draw With Friends!</i> is a clone copy of the popular
+                        game <i>Pictionary</i>. Each round, a different player
+                        is given a random word to draw and the other 3 players
+                        must guess the word to gain a point. The first player to
+                        reach 3 points will be declared the winner of the game
+                        and a new game will begin. <br />
+                        <br />
+                        By utilizing Websockets (socket.io), Canvas and NodeJs,
+                        Draw With Friends! is a project that connects users
+                        (players) from different client browsers into a game
+                        session (server room). Multiple rooms are also
+                        supported, as the first four players to join will be put
+                        in one game (server) room and the following four will be
+                        put in another game (server) room. Within a game, as the
+                        drawer is painting his artwork onto their canvas, all
+                        the image data is being emitted to the server, in which
+                        the server will then broadcast the data back to the
+                        other 3 guessers onto their respective canvases.
+                        Similarly, all the messages in the chatbox that the 3
+                        guessers send will be emitted to the server, which will
+                        be checked against the drawer's word and then
+                        broadcasted back to every player in the room.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">
+                        HTML5, CSS3, JavaScript, NodeJs, Canvas, Websockets
+                        (socket.io)
+                    </p>
+                    <h3>Platform</h3>
+                    <p class="p">Desktop Browser</p>
+                    <h3>Duration</h3>
+                    <p class="p">Less than 6 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">Solo Developer</p>
                 </div>
-    
-                <h3>Draw With Friends!</h3>
-    
-                <div class="description">
-                    <section class="left">
-                        <h4>Overview</h4>
-                        <p>
-                            Draw With Friends! is a clone copy of the popular game
-                            <i>Pictionary</i>. Each round, a different player is
-                            given a random word to draw and the other 3 players must
-                            guess the word to gain a point. The first player to
-                            reach 3 points will be declared the winner of the game
-                            and a new game will begin. <br />
-                            <br />
-                            By utilizing Websockets (socket.io), Canvas and NodeJs,
-                            Draw With Friends! is a project that connects users
-                            (players) from different client browsers into a game
-                            session (server room). Multiple rooms are also
-                            supported, as the first four players to join will be put
-                            in one game (server) room and the following four will be
-                            put in another game (server) room. Within a game, as the
-                            drawer is painting his artwork onto their canvas, all
-                            the image data is being emitted to the server, in which
-                            the server will then broadcast the data back to the
-                            other 3 guessers onto their respective canvases.
-                            Similarly, all the messages in the chatbox that the 3
-                            guessers send will be emitted to the server, which will
-                            be checked against the drawer's word and then
-                            broadcasted back to every player in the room.
-                        </p>
-                        <h4>Tools used</h4>
-                        <p class="p">
-                            HTML5, CSS3, JavaScript, NodeJs, Canvas, Websockets
-                            (socket.io)
-                        </p>
-                        <h4>Role</h4>
-                        <p class="p">Programmer & Designer</p>
-                        <p>
-                            - Programmed core functionality of the game, such as
-                            <ul>
-                                <li>
-                                    connecting different client browsers in a game
-                                    session (4 player server rooms) using websockets
-                                    (socket.io)
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </p>
-                        
-                    </section>
-    
-                    <section class="right">
-                        <h4>Role (Cont.)</h4>
-                        <p>
-                            <ul>
-                                <li>
-                                    the server assigns one random drawer at the
-                                    start of each game, while the other three
-                                    players will guess the word
-                                </li>
-                                <li>
-                                    communication logic between clients and server
-                                    when sending and receiving data, i.e - chatbox
-                                    messages, updates to the canvas when drawing
-                                </li>
-                                <li>
-                                    emitting and broadcasting image data (canvas
-                                    drawings) between server and all connected
-                                    clients
-                                </li>
-                            </ul>
-                            - Designed layout and style/look and feel of the game
-                        </p>
-                        <h4>Platform</h4>
-                        <p class="p">Desktop Browser</p>
-                        <h4>Duration</h4>
-                        <p class="p">Less than 6 weeks</p>
-                        <h4>Team size</h4>
-                        <p class="p">1</p>
-    
-                        <p>
-                            <b>
-                                <span>Play the Game! </span>
-                                <a href="https://pictionary-n42s.onrender.com/">
-                                    Draw With Friends!
-                                </a>
-                            </b>
-                        </p>
-                    </section>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/pictionary3.webp"
+                        alt="pictionary 3"
+                    />
                 </div>
-            </div>
+                <div class="right">
+                    <h3>Role: Gameplay Programmer</h3>
+                    <ul>
+                        <li>
+                            Programmed the connectivity of different client
+                            browsers in a game session (4 player server room)
+                            using websockets (socket.io)
+                        </li>
+                        <li>
+                            Programmed the communication logic between clients
+                            and server when sending and receiving data, i.e -
+                            chatbox messages, updates to the canvas when drawing
+                        </li>
+                        <li>
+                            Programmed the game flow logic, which entails the
+                            server assigning one random drawer at the start of
+                            each game, while the other three players are
+                            guessers
+                        </li>
+                        <li>
+                            Programmed a round system game where the first
+                            person to guess correctly 3 times wins the game
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/pictionary4.webp"
+                        alt="pictionary 4"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role: Designer</h3>
+                    <ul>
+                        <li>Designed style/look and feel of the game</li>
+                        <li>Designed the UI layout of the game</li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
         <footer id="footer">

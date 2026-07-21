@@ -1,65 +1,120 @@
 @import url("https://fonts.googleapis.com/css?family=Abel");
-#content #contacts, #content #aboutMe {
-  background-image: url("/assets/images/appContentWallpaper.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+#content #contacts,
+#content #aboutMe {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
-  font-family: "Abel", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Abel", sans-serif;
 }
 
-#content {
-  margin-top: 60px;
-  padding-top: 30px;
+#content .odd {
+    background-color: #555;
+    color: white;
 }
+
+#content .even {
+    background-color: #fdfdfd;
+    color: black;
+}
+
 #content #aboutMe {
-  clear: both;
+    padding: 30px 0px;
+    margin-top: 60px;
 }
-#content #aboutMe .leftAboutMe,
-#content #aboutMe .rightAboutMe {
-  width: 40%;
+
+#content #aboutMe #title {
+    text-align: center;
 }
-#content #aboutMe .leftAboutMe {
-  text-align: center;
+
+#content #aboutMe #intro {
+    width: 60%;
+    margin: auto;
+    padding: 0.5em 2em;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 5px;
+    box-shadow: #222 3px 3px;
 }
+
+#content #programming,
+#content #artist,
+#content #design {
+    padding: 30px 0px;
+}
+
+#content #projects h1 {
+    text-align: center;
+}
+
+#content #programming .programmingFlex,
+#content #artist .artistFlex,
+#content #design .designFlex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 #content .projects {
-  float: left;
-  width: 25%;
-  text-align: center;
-  margin: 0 auto;
+    padding: 0;
+    margin: 0;
+    width: 33%;
+    text-align: center;
+    height: 500px;
+    display: inline-block;
 }
 #content .projects img {
-  width: 200px;
-  height: 200px;
+    width: 300px;
+    height: 300px;
+}
+#content .projects .fake-links div {
+    height: 150px;
 }
 #content .projects .fake-links {
-  text-decoration: none;
+    text-decoration: none;
 }
-#content .projects .fake-links:visited,
-#content .projects .fake-links:hover,
-#content .projects .fake-links:link,
-#content .projects .fake-links:active {
-  color: black;
+#content #programming .fake-links:visited,
+#content #programming .fake-links:hover,
+#content #programming .fake-links:link,
+#content #programming .fake-links:active {
+    color: black;
+}
+#content #artist .fake-links:visited,
+#content #artist .fake-links:hover,
+#content #artist .fake-links:link,
+#content #artist .fake-links:active {
+    color: white;
+}
+#content #design .fake-links:visited,
+#content #design .fake-links:hover,
+#content #design .fake-links:link,
+#content #design .fake-links:active {
+    color: black;
 }
 #content #contacts {
-  text-align: center;
-  clear: both;
+    text-align: center;
+    padding: 30px 0px;
 }
 #content #contacts #LinkedIn,
 #content #contacts #Github {
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
+}
+
+#content #contacts #contactsInfo {
+    width: 350px;
+    margin: auto;
+    padding: 0.5em 2em;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 5px;
+    box-shadow: #222 3px 3px;
 }
 
 /*# sourceMappingURL=index.css.map */

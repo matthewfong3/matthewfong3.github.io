@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Matthew Fong - Game Designer/Developer</title>
 
-        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
         <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
         <link
             href="hosted/css/mobileProjects.css"
@@ -50,13 +50,13 @@
             <div id="navbarLinks">
                 <img
                     id="dropdown"
-                    src="hosted/images/dropdown.png"
+                    src="hosted/images/dropdown.webp"
                     alt="dropdown icon"
                 />
                 <a href="index.html" class="navLinks"
                     ><img
                         id="logo"
-                        src="hosted/images/face_gray.png"
+                        src="hosted/images/face_gray.webp"
                         alt="face logo"
                 /></a>
             </div>
@@ -72,10 +72,26 @@
                 </li>
                 <li>
                     <a
-                        id="projectsAnchor"
-                        href="index.html#projects"
+                        id="programmingAnchor"
+                        href="index.html#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
                         class="selected navLinks"
-                        >Projects</a
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
                     >
                 </li>
                 <li>
@@ -90,92 +106,125 @@
             </ul>
 
             <div id="shortcutLinks">
-                <a href="https://www.linkedin.com/in/matthewfong3/"
-                    ><img
-                        id="shortcutLinkedIn"
-                        src="hosted/images/linkedin_gray.png"
-                        alt="LinkedIn link"
-                /></a>
                 <a href="https://github.com/matthewfong3"
                     ><img
                         id="shortcutGithub"
-                        src="hosted/images/github_gray.png"
+                        src="hosted/images/github_gray.webp"
                         alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
                 /></a>
             </div>
         </nav>
 
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="selected navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
         <div id="projectContent">
-            <div class="reactComponent">
-                <div id="slider-container">
-                    <div class="slides fade">
-                        <video controls>
-                            <source
-                                src="hosted/images/devilfruit1.mp4"
-                                type="video/mp4"
-                            />
-                        </video>
-                    </div>
-                    <div class="slides fade">
-                        <video controls>
-                            <source
-                                src="hosted/images/devilfruit2.mp4"
-                                type="video/mp4"
-                            />
-                        </video>
-                    </div>
-
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/devilfruit1.webp"
+                        alt="Devil Fruit 1"
+                    />
                 </div>
-
-                <div id="dotsDiv">
-                    <span class="dots" data-i="0"></span>
-                    <span class="dots" data-i="1"></span>
+                <div class="right">
+                    <h1>Devil Fruit V1</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        Inspired by <i>One Piece</i>'s gomu gomu devil fruit, I
+                        created two variations of the devil fruit. Using
+                        primitives and bezier curves, I first modeled the shape
+                        of devil fruit. After some simple texturing and shading,
+                        I found myself investing most of my time in lighting and
+                        compositing (post processing) to really make my devil
+                        fruit pop and shine. Finally, with some simple
+                        animations, I rendered out a short video showcasing my
+                        irresistible devil fruits.
+                    </p>
+                    <h3>Tools Used</h3>
+                    <p class="p">Blender</p>
+                    <h3>Duration</h3>
+                    <p class="p">Less than 2 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">Solo Artist</p>
+                    <h3>Role: 3D Artist</h3>
+                    <ul>
+                        <li>3D modelling</li>
+                        <li>Texturing and Shading</li>
+                        <li>Compositing (Post processing)</li>
+                        <li>Lighting</li>
+                        <li>Animation</li>
+                        <li>Rendering</li>
+                    </ul>
                 </div>
+            </section>
 
-                <h3>"One Piece" Devil Fruit</h3>
-
-                <div class="description">
-                    <section class="left">
-                        <h4>Overview</h4>
-                        <p>
-                            Inspired by <i>One Piece</i>'s gomu gomu devil
-                            fruit, I created two variations of the devil fruit.
-                            Using primitives and bezier curves, I first modeled
-                            the shape of devil fruit. After some simple
-                            texturing and shading, I found myself investing most
-                            of my time into lighting and compositing (post
-                            processing) to really make my devil fruit pop and
-                            shine. Finally, with some simple animations, I
-                            rendered out a short video showcasing my
-                            irresistible devil fruits. <br />
-                            <br />
-                            P.S. - I never finished watching
-                            <i>One Piece</i> and probably never will because it
-                            is too long -
-                            <i>Ain't nobody got time for that!</i> :)
-                        </p>
-                        <h4>Tools Used</h4>
-                        <p class="p">Blender</p>
-                    </section>
-
-                    <section class="right">
-                        <h4>Role</h4>
-                        <p class="p">
-                            - 3D modelling <br />
-                            - Texturing and Shading <br />
-                            - Compositing (Post processing) <br />
-                            - Lighting <br />
-                            - Animation <br />- Rendering
-                        </p>
-                        <h4>Duration</h4>
-                        <p class="p">Less than 2 weeks</p>
-                        <h4>Team size</h4>
-                        <p class="p">1</p>
-                    </section>
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/devilfruit2.webp"
+                        alt="Devil Fruit 2"
+                    />
                 </div>
-            </div>
+                <div class="right">
+                    <h1>Devil Fruit V2</h1>
+                    <p>
+                        P.S. - I never finished watching <i>One Piece</i> and
+                        probably never will because it is too long -
+                        <i>Ain't nobody got time for that!</i> :)
+                    </p>
+                </div>
+            </section>
         </div>
 
         <footer id="footer">

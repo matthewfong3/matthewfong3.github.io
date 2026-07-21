@@ -4,12 +4,12 @@ const setupProjectsLinks = () => {
         l.addEventListener("mouseover", () => {
             let image = l.firstElementChild;
             let file = image.getAttribute("data-file");
-            image.src = `hosted/images/${file}.png`;
+            image.src = `hosted/images/${file}.webp`;
         });
         l.addEventListener("mouseout", () => {
             let image = l.firstElementChild;
             let file = image.getAttribute("data-file");
-            image.src = `hosted/images/${file}_gray.png`;
+            image.src = `hosted/images/${file}_gray.webp`;
         });
     }
 };
@@ -29,54 +29,54 @@ const navOnHover = () => {
     const github = document.getElementById("shortcutGithub");
     logo.addEventListener(
         "mouseover",
-        () => (logo.src = "hosted/images/face.png")
+        () => (logo.src = "hosted/images/face.webp"),
     );
     logo.addEventListener(
         "mouseout",
-        () => (logo.src = "hosted/images/face_gray.png")
+        () => (logo.src = "hosted/images/face_gray.webp"),
     );
     linkedIn.addEventListener(
         "mouseover",
-        () => (linkedIn.src = "hosted/images/linkedin.png")
+        () => (linkedIn.src = "hosted/images/linkedin.webp"),
     );
     linkedIn.addEventListener(
         "mouseout",
-        () => (linkedIn.src = "hosted/images/linkedin_gray.png")
+        () => (linkedIn.src = "hosted/images/linkedin_gray.webp"),
     );
     github.addEventListener(
         "mouseover",
-        () => (github.src = "hosted/images/github.png")
+        () => (github.src = "hosted/images/github.webp"),
     );
     github.addEventListener(
         "mouseout",
-        () => (github.src = "hosted/images/github_gray.png")
+        () => (github.src = "hosted/images/github_gray.webp"),
     );
 };
 const toggleDropdown = (respProps) => {
-    const navbarList = document.getElementById("navbarList");
+    const navbarList = document.getElementById("respNavbarList");
     if (respProps.showDropdown) {
         navbarList.animate(
             {
-                top: ["61px", "-500px"],
+                top: ["62px", "-500px"],
             },
             {
                 duration: 500,
                 easing: "ease-in-out",
-            }
+            },
         );
         navbarList.style.top = "-500px";
         respProps.showDropdown = false;
     } else {
         navbarList.animate(
             {
-                top: ["-500px", "61px"],
+                top: ["-500px", "62px"],
             },
             {
                 duration: 500,
                 easing: "ease-in-out",
-            }
+            },
         );
-        navbarList.style.top = "61px";
+        navbarList.style.top = "62px";
         respProps.showDropdown = true;
     }
 };
@@ -102,13 +102,13 @@ const smoothScrolling = (respProps) => {
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $("html, body").animate(
                 {
-                    scrollTop: $(hash).offset().top,
+                    scrollTop: $(hash).offset().top - 60,
                 },
                 500,
                 function () {
                     // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                }
+                    window.location.hash = hash - 60;
+                },
             );
         }
         if (respProps.showDropdown && window.innerWidth <= "768") {
@@ -117,27 +117,148 @@ const smoothScrolling = (respProps) => {
     });
     let logoAnchor = document.getElementById("logoAnchor");
     let aboutMeAnchor = document.getElementById("aboutMeAnchor");
-    let projectsAnchor = document.getElementById("projectsAnchor");
+    let programmingAnchor = document.getElementById("programmingAnchor");
+    let artistAnchor = document.getElementById("artistAnchor");
+    let designAnchor = document.getElementById("designAnchor");
     let contactsAnchor = document.getElementById("contactsAnchor");
+    let respAboutMeAnchor = document.getElementById("respAboutMeAnchor");
+    let respProgrammingAnchor = document.getElementById(
+        "respProgrammingAnchor",
+    );
+    let respArtistAnchor = document.getElementById("respArtistAnchor");
+    let respContactsAnchor = document.getElementById("respContactsAnchor");
+
     logoAnchor.addEventListener("click", () => {
         aboutMeAnchor.classList.add("selected");
-        projectsAnchor.classList.remove("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.remove("selected");
         contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.add("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.remove("selected");
     });
     aboutMeAnchor.addEventListener("click", () => {
         aboutMeAnchor.classList.add("selected");
-        projectsAnchor.classList.remove("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.remove("selected");
         contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.add("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.remove("selected");
     });
-    projectsAnchor.addEventListener("click", () => {
+    programmingAnchor.addEventListener("click", () => {
         aboutMeAnchor.classList.remove("selected");
-        projectsAnchor.classList.add("selected");
+        programmingAnchor.classList.add("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.remove("selected");
         contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.remove("selected");
+        respProgrammingAnchor.classList.add("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.remove("selected");
+    });
+    artistAnchor.addEventListener("click", () => {
+        aboutMeAnchor.classList.remove("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.add("selected");
+        designAnchor.classList.remove("selected");
+        contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.remove("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.add("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.remove("selected");
+    });
+    designAnchor.addEventListener("click", () => {
+        aboutMeAnchor.classList.remove("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.add("selected");
+        contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.remove("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.add("selected");
+        respContactsAnchor.classList.remove("selected");
     });
     contactsAnchor.addEventListener("click", () => {
         aboutMeAnchor.classList.remove("selected");
-        projectsAnchor.classList.remove("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.remove("selected");
         contactsAnchor.classList.add("selected");
+        respAboutMeAnchor.classList.remove("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.add("selected");
+    });
+    respAboutMeAnchor.addEventListener("click", () => {
+        aboutMeAnchor.classList.add("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.remove("selected");
+        contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.add("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.remove("selected");
+    });
+    respProgrammingAnchor.addEventListener("click", () => {
+        aboutMeAnchor.classList.remove("selected");
+        programmingAnchor.classList.add("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.remove("selected");
+        contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.remove("selected");
+        respProgrammingAnchor.classList.add("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.remove("selected");
+    });
+    respArtistAnchor.addEventListener("click", () => {
+        aboutMeAnchor.classList.remove("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.add("selected");
+        designAnchor.classList.remove("selected");
+        contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.remove("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.add("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.remove("selected");
+    });
+    respDesignAnchor.addEventListener("click", () => {
+        aboutMeAnchor.classList.remove("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.add("selected");
+        contactsAnchor.classList.remove("selected");
+        respAboutMeAnchor.classList.remove("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.add("selected");
+        respContactsAnchor.classList.remove("selected");
+    });
+    respContactsAnchor.addEventListener("click", () => {
+        aboutMeAnchor.classList.remove("selected");
+        programmingAnchor.classList.remove("selected");
+        artistAnchor.classList.remove("selected");
+        designAnchor.classList.remove("selected");
+        contactsAnchor.classList.add("selected");
+        respAboutMeAnchor.classList.remove("selected");
+        respProgrammingAnchor.classList.remove("selected");
+        respArtistAnchor.classList.remove("selected");
+        respDesignAnchor.classList.remove("selected");
+        respContactsAnchor.classList.add("selected");
     });
 };
 const redirect = (res) => {

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.webp"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.webp"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="programmingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.webp"
+                        alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="projectContent">
+            <section class="odd" id="cover">
+                <img src="hosted/images/spaceinvaders4.webp" />
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/spaceinvaders_playtest.webp"
+                        alt="Space-Invaders Playtest"
+                    />
+                </div>
+                <div class="right">
+                    <h1>Space-Invaders 3D</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        <i>Space-Invaders 3D</i> is a remake prototype of the
+                        classic <i>Space-Invaders</i> game. The game features
+                        local co-op split screen where two players must fend off
+                        the endless waves of enemies from destroying the nexus
+                        base. These enemies consist of a mashup of retro game
+                        characters such as <i>Pac-Man</i> ghosts,
+                        <i>Super Mario</i>'s goomba, and of course, the classic
+                        <i>Space-Invaders</i> aliens. Both players pilot TIE
+                        Fighter ships from <i>Star Wars</i>. Players can shoot
+                        at alien projectiles to destroy them or block them with
+                        their active shields to prevent them from damaging the
+                        base. After each successful wave clear, players will be
+                        able pick up power ups that upgrade their ship's fire
+                        power and fire rate.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">Unreal Engine 5, Blueprints, Blender</p>
+                    <h3>Platform</h3>
+                    <p class="p">Desktop Browser</p>
+                    <h3>Duration</h3>
+                    <p class="p">Less than 3 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">2</p>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/spaceinvaders2.webp"
+                        alt="Space-Invaders 2"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role: Gameplay Programmer</h3>
+                    <ul>
+                        <li>
+                            Implemented local co-op split screen feature with
+                            both mouse/keyboard and controller support
+                        </li>
+                        <li>
+                            Implemented the player blueprint with movement,
+                            collision detection, player shooting a line trace
+                            from the gun to crosshair
+                        </li>
+                        <li>Programmed the player's projectiles blueprint</li>
+                        <li>
+                            Programmed the different upgrade power ups (rapid
+                            fire, burst fire)
+                        </li>
+                        <li>
+                            Implemented an active shield to block enemy
+                            projectiles
+                        </li>
+
+                        <li>Programmed the crosshair widget blueprint</li>
+                        <li>
+                            Created and programmed the functionality for the
+                            menus (start menu, pause menu, controls menu and
+                            game over screen) with widget blueprints
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/spaceinvaders3.webp"
+                        alt="Space-Invaders 3"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role: 3D Artist</h3>
+                    <ul>
+                        <li>
+                            Modeled all character game assets (TIE Fighter ship,
+                            Space-Invaders alien, Super Mario's goomba, Pac-Man
+                            ghost)
+                        </li>
+                        <li>Textured all character game assets</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/spaceinvaders5.webp"
+                        alt="Space-Invaders 5"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role: Designer</h3>
+                    <ul>
+                        <li>
+                            Designed the different upgrade power ups (rapid
+                            fire, burst fire)
+                        </li>
+                        <li>
+                            Designed and assembled the game level with finished
+                            assets
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

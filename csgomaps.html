@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.webp"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.webp"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="programmingAnchor"
+                        href="index.html#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="selected navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.webp"
+                        alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="selected navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="projectContent">
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/de_streets1.webp"
+                        alt="de_streets 1"
+                    />
+                    <img
+                        src="hosted/images/de_streets2.webp"
+                        alt="de_streets 2"
+                    />
+                    <span>de_streets</span>
+                </div>
+                <div class="right">
+                    <h1>CS:GO Maps</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        The following CS:GO maps demonstrate my understanding
+                        and application of level design principles, with a focus
+                        on designing objective-based team tactical FPS maps.
+                        following Counter-Strike's traditional four square map
+                        design pattern, I challenged myself to design and
+                        graybox 3 different sized maps, one small, one medium
+                        and one larger sized map.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">CS:GO SDK</p>
+                    <h3>Platform</h3>
+                    <p class="p">Windows</p>
+                    <h3>Duration</h3>
+                    <p class="p">Less than 4 weeks</p>
+                    <h3>Team size</h3>
+                    <p class="p">Solo Designer</p>
+                    <h3>Role</h3>
+                    <ul class="p">
+                        <li>
+                            Designed the level layout and gameplay flow for each
+                            map
+                        </li>
+                        <li>
+                            Grayboxed the levels in CS:GO SDK with primitive
+                            shapes
+                        </li>
+                        <li>
+                            Playtested the levels and iterated on the map design
+                            to improve map balance and player experience
+                        </li>
+                        <li>
+                            Polished maps by replacing primitive shapes with
+                            asset models and textures
+                        </li>
+                    </ul>
+
+                    <p>
+                        <b>
+                            <a
+                                id="videoLink"
+                                href="https://www.youtube.com/watch?v=qzuKfUTZR1s&list=PLY_iQZhzw5eI3fsqOHmY7Xq4etRBQ1peI"
+                            >
+                                <button>Watch the Video Commentaries</button>
+                            </a>
+                        </b>
+                    </p>
+
+                    <h1>de_streets Map</h1>
+                    <p>
+                        <i>de_streets</i> is a large scale map with wide alley
+                        ways, big bomb sites and numerous ways to enter each
+                        bomb site. I designed this map with this intent so
+                        players on the defending team have multiple locations
+                        throughout the map to hide and hold angles. Players on
+                        the attacking team have multiple options to enter bomb
+                        sites. Gun fights will feel very spacious for players on
+                        both teams.
+                    </p>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img src="hosted/images/de_pier1.webp" alt="de_pier 1" />
+                    <img src="hosted/images/de_pier2.webp" alt="de_pier 2" />
+                    <span>de_pier</span>
+                </div>
+                <div class="right">
+                    <h1>de_pier Map</h1>
+                    <p>
+                        <i>de_pier</i> is a medium sized map with a heavier
+                        focus on gun fights and interaction on bomb sites. I
+                        designed the two bomb sites to be unique from each other
+                        to give the players different gameplay experiences when
+                        playing on these bomb sites. "A" bomb site is more
+                        compact with closer tight corners to clear, with a focus
+                        on CQC (close-quarter combat). "B" bomb site is more
+                        spacious with a focus on close-medium ranged gun fights.
+                        It also offers players more verticality as players can
+                        take fights from ramps and second floor windows.
+                    </p>
+                </div>
+            </section>
+
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/de_construct1.webp"
+                        alt="de_construct 1"
+                    />
+                    <img
+                        src="hosted/images/de_construct2.webp"
+                        alt="de_construct 2"
+                    />
+                    <span>de_construct</span>
+                </div>
+                <div class="right">
+                    <h1>de_construct Map</h1>
+                    <p>
+                        <i>de_construct</i> is a small sized map with an
+                        emphasis on verticality and close-medium ranged gun
+                        fights throughout the map. I designed this map with the
+                        intention for players to fight for height advantage. For
+                        example, players can fight for control of a sniper's
+                        nest which overlooks the middle of the map. "A" bomb
+                        site is designed with ramps and open areas for players
+                        to take medium ranged aim battles. "B" bomb site is
+                        designed for tight corner clearing and CQC.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>

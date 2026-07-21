@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Matthew Fong - Game Designer/Developer</title>
 
-        <link href="hosted/images/favicon.png" rel="shortcut icon" />
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
         <link href="hosted/css/resume.css" rel="stylesheet" type="text/css" />
         <link
             href="hosted/css/mobileResume.css"
@@ -50,13 +50,13 @@
             <div id="navbarLinks">
                 <img
                     id="dropdown"
-                    src="hosted/images/dropdown.png"
+                    src="hosted/images/dropdown.webp"
                     alt="dropdown icon"
                 />
                 <a href="index.html" class="navLinks"
                     ><img
                         id="logo"
-                        src="hosted/images/face_gray.png"
+                        src="hosted/images/face_gray.webp"
                         alt="face logo"
                 /></a>
             </div>
@@ -72,10 +72,26 @@
                 </li>
                 <li>
                     <a
-                        id="projectsAnchor"
-                        href="index.html#projects"
+                        id="programmingAnchor"
+                        href="index.html#programming"
                         class="navLinks"
-                        >Projects</a
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
                     >
                 </li>
                 <li>
@@ -97,20 +113,68 @@
             </ul>
 
             <div id="shortcutLinks">
-                <a href="https://www.linkedin.com/in/matthewfong3/"
-                    ><img
-                        id="shortcutLinkedIn"
-                        src="hosted/images/linkedin_gray.png"
-                        alt="LinkedIn link"
-                /></a>
                 <a href="https://github.com/matthewfong3"
                     ><img
                         id="shortcutGithub"
-                        src="hosted/images/github_gray.png"
+                        src="hosted/images/github_gray.webp"
                         alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
                 /></a>
             </div>
         </nav>
+
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="selected navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
 
         <div id="resumeContent">
             <p>
@@ -157,59 +221,55 @@
                     Zombies mode, where the player can spend points to purchase
                     weapons around the map or replenish ammo
                 </span>
-                <li>Adventure Time Game <i>(Unreal Engine 5)</i></li>
+                <li>Interlinked <i>(Unreal Engine 5)</i></li>
                 <span>
-                    - Programmed player controls such as movement, jumping,
-                    attacking <br />
-                    - Scripted various enemy AI logic using AI Controller, such
-                    as edge detection, enemy detection, simple autonomous
-                    behavior (seeking when the player is in range or free
-                    roaming) <br />
-                    - Designed and implemented the layout and flow of the level
+                    - Designed the code architecture of the player's 6 ability
+                    spells <br />
+                    - Programmed 2 of the 6 player's ability spells with UE5's
+                    Gameplay Ability System (GAS) <br />
+                    - Designed and implemented 2 of 3 enemy AI's behavior
+                    trees<br />
+                    - Implemented procedural walk animations with UE5's control
+                    rig and locomotor <br />
+                    - Implemented animation blueprint and animation montages for
+                    Torture Nexus, an AI enemy
                 </span>
-                <li>Arcade-Jam</li>
+                <li>TPS Multiplayer Demo <i>(Unreal Engine 5)</i></li>
                 <span>
-                    - Developed a simple 2-versus-2 (air-hockey-like) team-based
-                    fast-paced arcade-shooter Canvas game, using NodeJS and
-                    ExpressJS framework, while demonstrating understanding of
-                    Websockets (socket.io) to connect unique client browsers to
-                    an interactive game session (server room) <br />
-                    - Programmed core mechanics/functionality of the game using
-                    Object-Oriented Programming in JavaScript, including basic
-                    player movement, firing bullets, bullet shielding,
-                    collision-detection, simple physics system and player
-                    scoring <br />
-                    - Handled the communication logic between client browsers
-                    and the server with regards to sending and receiving data
-                    across all clients and server, in order to simulate a near
-                    real-time game experience for players <br />
-                    - Designed the style/look and feel of the game using CSS3
+                    - Programmed player controls with the Enhanced Input
+                    Subsystem, such as movement, sprinting, jumping, crouching,
+                    shooting, aiming down sight (ADS), and reloading with C++<br />
+                    - Programmed replication of line tracing when shooting,
+                    applying damage, reloading, sound effects and particle
+                    effects from server across all clients through C++<br />
+                    - Programmed the logic behind updating weapon ammunition
+                    when reloading <br />
+                    - Programmed the animation blueprint for the third person
+                    character <br />
+                    - Designed and whiteboxed a simple level to demo the
+                    multiplayer prototype
                 </span>
-
-                <li>
-                    Dynamic Dash Game -
-                    <i>Inspired by Steam’s “Speedrunners” game</i>
-                </li>
+                <li>Configura <i>(Godot)</i></li>
                 <span>
-                    - Programmed some of the core game mechanics using
-                    Object-Oriented Programming, such as Power-Up abilities, in
-                    C# <br />
-                    - Wrote C# scripts to handle the interactions between
-                    different power-up abilities and how they affect the players
-                    <br />
-                    - Designed layout and obstacles of each level/race course in
-                    the Unity editor <br />
-                    - Designed GUI elements and UI menus of the game in Unity
+                    - Refactored existing codebase to be more performant<br />
+                    - Programmed the extraction of the base model meshes into a
+                    single scene and accessory meshes into their own respective
+                    scenes<br />
+                    - Programmed the feature to dynamically loading new mesh
+                    assets and unloading previously selected assets in the
+                    character creator <br />
+                    - Created documentation for developers to reference
+                    descriptions of variables, methods, and classes of all
+                    scripts
                 </span>
             </ul>
             <hr />
 
             <h3>Skills:</h3>
-            <h4>Programming Languages: C++, C#, JavaScript</h4>
+            <h4>Programming Languages: C++, C#, GDScript, JavaScript</h4>
             <h4>
-                Tools/Frameworks:, Github, HTML5, CSS3, Sass, Flexbox, ES6,
-                NodeJS, ExpressJS, MVC framework, ReactJS, JQuery, Websockets
-                (socket.io), Canvas
+                Software: Unreal Engine 5, Blender, Godot, Unity, Visual Studio,
+                VS Code, Autodesk Maya
             </h4>
             <h4>
                 Concepts: Object-Oriented Programming, Agile Development,
@@ -217,8 +277,9 @@
                 RESTful-API
             </h4>
             <h4>
-                Software: Unreal Engine 5, Blender, Unity, Visual Studio, VS
-                Code, Autodesk Maya
+                Tools/Frameworks: Github, Trello, Jira, HTML5, CSS3, ES6,
+                NodeJS, ReactJS, Websockets (socket.io), ExpressJS, MVC
+                framework, Sass, Flexbox
             </h4>
             <hr />
 
@@ -230,8 +291,10 @@
                     May 2027
                 </h5>
                 <h5 class="eduinfo">
-                    <span class="relevant">Relevant Coursework: </span>Game
-                    Design, Game Development Processes, AI for Gameplay
+                    <span class="relevant">Relevant Coursework: </span>Advanced
+                    Topics in Game Dev (Unreal Engine 5), AI for Gameplay,
+                    Production Studio, Gameplay and Prototyping, Game
+                    Development Processes, Game Design
                 </h5>
                 <h5 class="eduinfo">Overall GPA: 4.00/4.00</h5>
                 <h4>Rochester Institute of Technology | Rochester, NY</h4>
@@ -241,10 +304,9 @@
                 </h5>
                 <h5 class="eduinfo">
                     <span class="relevant">Relevant Coursework: </span>Game
-                    Design & Development, Data Structures & Algorithms, Level
-                    Design, 3D Animation & Asset Production, Game Graphics
-                    Programming, Game Dev & Algorithm Problem Solving, Digital
-                    Audio Production
+                    Design & Development, Game Graphics Programming, Data
+                    Structures & Algorithms, Game Dev & Algorithm Problem
+                    Solving, Level Design, 3D Animation & Asset Production
                 </h5>
                 <h5 class="eduinfo">
                     Honors & Awards: Summa Cum Laude, Dean's List Fall 2014 -
@@ -254,17 +316,21 @@
             <hr />
             <div id="workExperience">
                 <h3>Work Experience:</h3>
-                <h4>Warren Street Hotel | New York, NY</h4>
-                <h5>Guest Service Ambassador | June-September 2024</h5>
+                <h4>MAGIC Spell Studios | Rochester, NY</h4>
+                <h5>
+                    Traver Creative Technologist Founders Program Developer |
+                    May 2026-August 2026
+                </h5>
                 <span>
-                    - Collaborated with other department managers to ensure
-                    upcoming deadlines were met <br />
-                    - Clear and prompt communication between different
-                    departments within the company, regarding special guest
-                    needs, requests, inquiries <br />
-                    - Regularly following up with guests to gain feedback and
-                    ensure their stay and service provided was nothing less of
-                    perfection
+                    - Developing Configura, an open-source character creation
+                    tool built in Godot <br />
+                    - Maintaining and expanding Configura’s core functionality,
+                    including its character creator add-on <br />
+                    - Developing new features <br />
+                    - Improving existing systems <br />
+                    - Collaborating with 3D artists to integrate character
+                    assets <br />
+                    - Promoting the project through online communities
                 </span>
 
                 <h4>The Langham Fifth Avenue, New York | New York, NY</h4>
@@ -277,18 +343,15 @@
                     various tasks as necessary during peak business hours <br />
                     - Listened to guest complaints, diffusing tense situations
                     and implementing solutions to ensure maximum guest
-                    satisfaction
-                </span>
-
-                <h4>Almax Taxi Brokers LLC | New York, NY</h4>
-                <h5>Full Stack Web Developer | January 2021-May 2022</h5>
-                <span>
-                    - Translated wireframes and design layouts into a prototype
-                    NodeJS, ExpressJS (MERN) web services site <br />
-                    - Implemented password change feature for all user accounts
-                    <br />
-                    - Built and designed reactive web pages and dynamic forms
-                    using HTML5, CSS3 and ReactJS
+                    satisfaction<br />
+                    - Collaborated with other department managers to ensure
+                    upcoming deadlines were met <br />
+                    - Clear and prompt communication between different
+                    departments within the company, regarding special guest
+                    needs, requests, inquiries<br />
+                    - Regularly following up with guests to gain feedback and
+                    ensure their stay and service provided was nothing less of
+                    perfection
                 </span>
             </div>
         </div>
