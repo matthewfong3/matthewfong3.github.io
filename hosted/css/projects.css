@@ -43,6 +43,10 @@ body {
     background-color: white;
 }
 
+#projectContent .pagelink {
+    color: white;
+}
+
 #projectContent h1 {
     margin-top: 0;
 }
