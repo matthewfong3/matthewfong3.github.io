@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Fong - Game Designer/Developer</title>
+
+        <link href="hosted/images/favicon.webp" rel="shortcut icon" />
+        <link href="hosted/css/projects.css" rel="stylesheet" type="text/css" />
+        <link
+            href="hosted/css/mobileProjects.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="hosted/css/mobileNav.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="hosted/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="hosted/css/footer.css" rel="stylesheet" type="text/css" />
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/prop-types@15.6/prop-types.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js"
+            integrity="sha512-skYYbQHAuOTpeJTthhUH3flZohep8blA+qjZOY0VqmfXMDiYcWxu29F5UbxU4LxaIpGkRBk+3Qf8qaXfd9jngg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="navbarLinks">
+                <img
+                    id="dropdown"
+                    src="hosted/images/dropdown.webp"
+                    alt="dropdown icon"
+                />
+                <a href="index.html" class="navLinks"
+                    ><img
+                        id="logo"
+                        src="hosted/images/face_gray.webp"
+                        alt="face logo"
+                /></a>
+            </div>
+
+            <ul id="navbarList">
+                <li>
+                    <a
+                        id="aboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="programmingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="artistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="designAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="contactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li><a href="resume.html" class="navLinks">Resume</a></li>
+            </ul>
+
+            <div id="shortcutLinks">
+                <a href="https://github.com/matthewfong3"
+                    ><img
+                        id="shortcutGithub"
+                        src="hosted/images/github_gray.webp"
+                        alt="Github link"
+                /></a>
+                <a href="https://www.linkedin.com/in/matthewfong3/"
+                    ><img
+                        id="shortcutLinkedIn"
+                        src="hosted/images/linkedin_gray.webp"
+                        alt="LinkedIn link"
+                /></a>
+            </div>
+        </nav>
+
+        <div id="respNav">
+            <ul id="respNavbarList">
+                <li>
+                    <a
+                        id="respAboutMeAnchor"
+                        href="index.html#aboutMe"
+                        class="navLinks"
+                        >About Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respProgrammingAnchor"
+                        href="index.html#programming"
+                        class="selected navLinks"
+                        >Programmer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respArtistAnchor"
+                        href="index.html#artist"
+                        class="navLinks"
+                        >Artist</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respDesignAnchor"
+                        href="index.html#design"
+                        class="navLinks"
+                        >Designer</a
+                    >
+                </li>
+                <li>
+                    <a
+                        id="respContactsAnchor"
+                        href="index.html#contacts"
+                        class="navLinks"
+                        >Contacts</a
+                    >
+                </li>
+                <li>
+                    <a href="resume.html" class="navLinks">Resume</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="projectContent">
+            <section class="odd">
+                <div class="left">
+                    <img
+                        src="hosted/images/configura_store_page.webp"
+                        alt="Configura store page screenshot"
+                    />
+                </div>
+                <div class="right">
+                    <h1>Configura</h1>
+                    <h3>Overview</h3>
+                    <p>
+                        <i>Configura</i> is an open-source character creator
+                        creation tool used in Godot. It allows developers to
+                        quickly integrate their 3D models and assets into an
+                        interactive character creator.
+                    </p>
+                    <h3>Tools used</h3>
+                    <p class="p">Godot, GDScript</p>
+                    <h3>Platform</h3>
+                    <p class="p">Windows</p>
+                    <h3>Duration</h3>
+                    <p class="p">3 months</p>
+                    <h3>Team size</h3>
+                    <p class="p">4</p>
+                </div>
+            </section>
+
+            <section class="even">
+                <div class="left">
+                    <img
+                        src="hosted/images/configura_community_review.webp"
+                        alt="Configura community review screenshot"
+                    />
+                </div>
+                <div class="right">
+                    <h3>Role: Programmer</h3>
+                    <ul>
+                        <li>
+                            Implemented separation of base model meshes and
+                            accessory meshes into their own respective scenes
+                            when reading in a 3D character model file
+                        </li>
+                        <li>
+                            Implemented dynamic mesh loading and unloading to
+                            optimize run-time performance, reduce memory storage
+                            and smaller character save files
+                        </li>
+                        <li>
+                            Implemented dynamic camera movement (camera will
+                            focus on the specific section of the character that
+                            is currently being edited)
+                        </li>
+                        <li>
+                            Improved quality of life features regarding camera
+                            movement (panning and rotation)
+                        </li>
+                        <li>
+                            Refactored an existing codebase to reduce redundancy
+                            and improve readability and maintainability
+                        </li>
+                        <li>
+                            Created and updated code documentation for the
+                            internal team and exterior documentation for
+                            developers and artists
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © Matthew Fong <br />
+                All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="hosted/js/projectsBundle.js"></script>
+    </body>
+</html>
